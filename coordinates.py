@@ -7,6 +7,8 @@ import os
 from dotenv import load_dotenv
 #Library for finding the lat and long
 from geopy.geocoders import GoogleV3
+# Library for reading the data folder
+import json
 
 
 
@@ -45,9 +47,36 @@ def find_coordinates(address):
         return None
 
 
+def read_json():
+    file_path = 'data/null_location.txt'
+
+    try:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+
+            for entry in data:
+                school_name = entry.get('school.name')
+                if school_name:
+                    entry['location.lat'] = 1
+                    entry['location.lon'] = 1
+                    print(f"Updated location for {school_name}")
+                else:
+                    print("School name not found in JSON entry.")
+
+        # Write the updated data back to the file
+        with open(file_path, 'w') as file:
+            json.dump(data, file, indent=2)
+        
+        print("Location values updated and saved to the file.")
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 
-
+read_json()
 
 #Sources
 # thank you Jake Witcher for the .env help! https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1
