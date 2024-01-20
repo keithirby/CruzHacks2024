@@ -7,8 +7,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10236801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.474121,
+    "location.lon": -84.997045,
     "student.size": null
   },
   {
@@ -19,8 +19,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10236802,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.376194,
+    "location.lon": -86.310928,
     "student.size": null
   },
   {
@@ -31,8 +31,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10236803,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.281174,
+    "location.lon": -85.471039,
     "student.size": null
   },
   {
@@ -43,8 +43,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10236808,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.802593,
+    "location.lon": -85.957161,
     "student.size": null
   },
   {
@@ -55,8 +55,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10236809,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.802593,
+    "location.lon": -85.957161,
     "student.size": null
   },
   {
@@ -67,8 +67,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10415101,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.607904,
+    "location.lon": -112.16097,
     "student.size": null
   },
   {
@@ -79,8 +79,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10415102,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.048928,
+    "location.lon": -111.093731,
     "student.size": null
   },
   {
@@ -91,8 +91,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10415103,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.453977,
+    "location.lon": -112.070574,
     "student.size": null
   },
   {
@@ -103,8 +103,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10415105,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.47253,
+    "location.lon": -114.32187,
     "student.size": null
   },
   {
@@ -115,8 +115,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 10772501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.641359,
+    "location.lon": -93.59597,
     "student.size": null
   },
   {
@@ -127,8 +127,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 11257001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.882757,
+    "location.lon": -87.631188,
     "student.size": null
   },
   {
@@ -139,8 +139,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 11577301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.010932,
+    "location.lon": -121.316155,
     "student.size": null
   },
   {
@@ -163,8 +163,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 11710401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.116267,
+    "location.lon": -80.414961,
     "student.size": null
   },
   {
@@ -175,8 +175,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 11891201,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.017382,
+    "location.lon": -117.258163,
     "student.size": null
   },
   {
@@ -187,8 +187,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 11917301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.030309,
+    "location.lon": -118.278446,
     "student.size": null
   },
   {
@@ -199,8 +199,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 12240901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.67234,
+    "location.lon": -115.49235,
     "student.size": null
   },
   {
@@ -211,8 +211,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 12265801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.88628,
+    "location.lon": -121.283143,
     "student.size": null
   },
   {
@@ -223,8 +223,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 12429201,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.712922,
+    "location.lon": -72.443889,
     "student.size": null
   },
   {
@@ -247,8 +247,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 12682703,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.659717,
+    "location.lon": -104.838852,
     "student.size": null
   },
   {
@@ -259,8 +259,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 12777801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.970612,
+    "location.lon": -103.538632,
     "student.size": null
   },
   {
@@ -271,8 +271,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.676558,
+    "location.lon": -72.654133,
     "student.size": null
   },
   {
@@ -283,8 +283,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.995183,
+    "location.lon": -72.571177,
     "student.size": null
   },
   {
@@ -295,8 +295,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017403,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.565893,
+    "location.lon": -73.010456,
     "student.size": null
   },
   {
@@ -307,8 +307,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017405,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.317955,
+    "location.lon": -71.799629,
     "student.size": null
   },
   {
@@ -319,8 +319,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017407,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.371719,
+    "location.lon": -72.117454,
     "student.size": null
   },
   {
@@ -331,8 +331,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017408,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.073139,
+    "location.lon": -71.044958,
     "student.size": null
   },
   {
@@ -343,8 +343,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13017409,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.187358,
+    "location.lon": -72.561944,
     "student.size": null
   },
   {
@@ -355,8 +355,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 13090701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.454085,
+    "location.lon": -75.721112,
     "student.size": null
   },
   {
@@ -367,8 +367,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 13090702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.744655,
+    "location.lon": -75.548391,
     "student.size": null
   },
   {
@@ -379,8 +379,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508101,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": -37.813628,
+    "location.lon": 144.963058,
     "student.size": null
   },
   {
@@ -391,8 +391,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508102,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.504325,
+    "location.lon": -84.247626,
     "student.size": null
   },
   {
@@ -403,8 +403,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508103,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.204492,
+    "location.lon": -81.074504,
     "student.size": null
   },
   {
@@ -415,8 +415,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508104,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.07653,
+    "location.lon": -81.980554,
     "student.size": null
   },
   {
@@ -427,8 +427,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508105,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.793573,
+    "location.lon": -80.384219,
     "student.size": null
   },
   {
@@ -439,8 +439,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508106,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.537973,
+    "location.lon": -81.311918,
     "student.size": null
   },
   {
@@ -451,8 +451,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508107,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.384517,
+    "location.lon": -82.44578,
     "student.size": null
   },
   {
@@ -463,8 +463,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508108,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.259031,
+    "location.lon": -81.602776,
     "student.size": null
   },
   {
@@ -475,8 +475,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508109,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.02489,
+    "location.lon": -82.529433,
     "student.size": null
   },
   {
@@ -487,8 +487,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508110,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.994083,
+    "location.lon": -80.339069,
     "student.size": null
   },
   {
@@ -499,8 +499,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508111,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.255029,
+    "location.lon": -80.419898,
     "student.size": null
   },
   {
@@ -511,8 +511,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508112,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.715298,
+    "location.lon": -80.105089,
     "student.size": null
   },
   {
@@ -523,8 +523,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508113,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.629091,
+    "location.lon": -81.803692,
     "student.size": null
   },
   {
@@ -535,8 +535,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508114,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.919492,
+    "location.lon": -82.730933,
     "student.size": null
   },
   {
@@ -547,8 +547,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508115,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.249637,
+    "location.lon": -82.727128,
     "student.size": null
   },
   {
@@ -559,8 +559,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 13508116,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.185929,
+    "location.lon": -80.164042,
     "student.size": null
   },
   {
@@ -571,8 +571,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 13552201,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.664827,
+    "location.lon": -81.515754,
     "student.size": null
   },
   {
@@ -583,8 +583,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13830901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.186799,
+    "location.lon": -82.544409,
     "student.size": null
   },
   {
@@ -595,8 +595,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13830902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.626775,
+    "location.lon": -81.804245,
     "student.size": null
   },
   {
@@ -607,8 +607,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13830903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.936885,
+    "location.lon": -82.328297,
     "student.size": null
   },
   {
@@ -619,8 +619,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 13830905,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.668219,
+    "location.lon": -81.389417,
     "student.size": null
   },
   {
@@ -631,8 +631,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 13962101,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.419978,
+    "location.lon": -81.783033,
     "student.size": null
   },
   {
@@ -643,8 +643,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 13962102,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.473498,
+    "location.lon": -82.010515,
     "student.size": null
   },
   {
@@ -655,8 +655,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 14736903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 47.682032,
+    "location.lon": -117.313419,
     "student.size": null
   },
   {
@@ -679,8 +679,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.661431,
+    "location.lon": -86.248079,
     "student.size": null
   },
   {
@@ -691,8 +691,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.250137,
+    "location.lon": -85.902846,
     "student.size": null
   },
   {
@@ -703,8 +703,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098703,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.191443,
+    "location.lon": -85.388281,
     "student.size": null
   },
   {
@@ -715,8 +715,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098704,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.504787,
+    "location.lon": -86.106499,
     "student.size": null
   },
   {
@@ -727,8 +727,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098705,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.383657,
+    "location.lon": -86.839703,
     "student.size": null
   },
   {
@@ -739,8 +739,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098706,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.111806,
+    "location.lon": -85.111808,
     "student.size": null
   },
   {
@@ -751,8 +751,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098707,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.389709,
+    "location.lon": -85.76265,
     "student.size": null
   },
   {
@@ -763,8 +763,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098708,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.01183,
+    "location.lon": -87.573329,
     "student.size": null
   },
   {
@@ -775,8 +775,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098709,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.370287,
+    "location.lon": -87.392321,
     "student.size": null
   },
   {
@@ -787,8 +787,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098710,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.871046,
+    "location.lon": -84.880736,
     "student.size": null
   },
   {
@@ -799,8 +799,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098711,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.639915,
+    "location.lon": -87.466743,
     "student.size": null
   },
   {
@@ -811,8 +811,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098712,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.072166,
+    "location.lon": -89.40075,
     "student.size": null
   },
   {
@@ -823,8 +823,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098713,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.166428,
+    "location.lon": -86.596926,
     "student.size": null
   },
   {
@@ -835,8 +835,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15098714,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.803806,
+    "location.lon": -86.159851,
     "student.size": null
   },
   {
@@ -847,8 +847,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 15336601,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.094017,
+    "location.lon": -94.43338,
     "student.size": null
   },
   {
@@ -859,8 +859,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 15492501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.037301,
+    "location.lon": -95.616366,
     "student.size": null
   },
   {
@@ -883,8 +883,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 16125301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.708064,
+    "location.lon": -67.456108,
     "student.size": null
   },
   {
@@ -895,8 +895,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 16210401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.610729,
+    "location.lon": -75.832121,
     "student.size": null
   },
   {
@@ -907,8 +907,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16884703,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.659752,
+    "location.lon": -83.24913,
     "student.size": null
   },
   {
@@ -919,8 +919,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16884704,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.265778,
+    "location.lon": -85.38383,
     "student.size": null
   },
   {
@@ -931,8 +931,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16884706,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.276968,
+    "location.lon": -84.451424,
     "student.size": null
   },
   {
@@ -943,8 +943,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16884707,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.243481,
+    "location.lon": -86.196788,
     "student.size": null
   },
   {
@@ -955,8 +955,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16947903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.495493,
+    "location.lon": -83.08386,
     "student.size": null
   },
   {
@@ -967,8 +967,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16947905,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.732366,
+    "location.lon": -84.551348,
     "student.size": null
   },
   {
@@ -979,8 +979,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16947907,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.613639,
+    "location.lon": -84.183357,
     "student.size": null
   },
   {
@@ -991,8 +991,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16947909,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 52.132633,
+    "location.lon": 5.291266,
     "student.size": null
   },
   {
@@ -1003,8 +1003,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 16947925,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.369674,
+    "location.lon": -83.07607,
     "student.size": null
   },
   {
@@ -1015,8 +1015,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17296301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 45.570349,
+    "location.lon": -93.242273,
     "student.size": null
   },
   {
@@ -1027,8 +1027,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17320301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.388748,
+    "location.lon": -94.79868,
     "student.size": null
   },
   {
@@ -1039,8 +1039,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17355901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.827643,
+    "location.lon": -95.832655,
     "student.size": null
   },
   {
@@ -1051,8 +1051,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17355902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.867185,
+    "location.lon": -96.761006,
     "student.size": null
   },
   {
@@ -1063,8 +1063,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17355903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.442461,
+    "location.lon": -95.136139,
     "student.size": null
   },
   {
@@ -1075,8 +1075,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17391101,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.285527,
+    "location.lon": -93.287076,
     "student.size": null
   },
   {
@@ -1087,8 +1087,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17395701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.664827,
+    "location.lon": -81.515754,
     "student.size": null
   },
   {
@@ -1099,8 +1099,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17395702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.048928,
+    "location.lon": -111.093731,
     "student.size": null
   },
   {
@@ -1111,8 +1111,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17399301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 47.524269,
+    "location.lon": -92.550568,
     "student.size": null
   },
   {
@@ -1123,8 +1123,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17447301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 47.947113,
+    "location.lon": -97.016243,
     "student.size": null
   },
   {
@@ -1135,8 +1135,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.859452,
+    "location.lon": -93.33598,
     "student.size": null
   },
   {
@@ -1147,8 +1147,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.859221,
+    "location.lon": -93.164082,
     "student.size": null
   },
   {
@@ -1159,8 +1159,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501403,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.169274,
+    "location.lon": -93.971581,
     "student.size": null
   },
   {
@@ -1171,8 +1171,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501404,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 45.128489,
+    "location.lon": -93.352499,
     "student.size": null
   },
   {
@@ -1183,8 +1183,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501405,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.950361,
+    "location.lon": -92.929847,
     "student.size": null
   },
   {
@@ -1195,8 +1195,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 17501406,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 45.145751,
+    "location.lon": -93.179899,
     "student.size": null
   },
   {
@@ -1207,8 +1207,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17526301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.535625,
+    "location.lon": -92.52583,
     "student.size": null
   },
   {
@@ -1219,8 +1219,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17557301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.918634,
+    "location.lon": -89.796846,
     "student.size": null
   },
   {
@@ -1231,8 +1231,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17557302,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.508716,
+    "location.lon": -91.400795,
     "student.size": null
   },
   {
@@ -1243,8 +1243,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 17623901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.286932,
+    "location.lon": -89.296241,
     "student.size": null
   },
   {
@@ -1255,8 +1255,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.680499,
+    "location.lon": -86.628349,
     "student.size": null
   },
   {
@@ -1267,8 +1267,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706503,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.724995,
+    "location.lon": -104.808803,
     "student.size": null
   },
   {
@@ -1279,8 +1279,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706504,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.225556,
+    "location.lon": -81.69909,
     "student.size": null
   },
   {
@@ -1291,8 +1291,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706505,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.555259,
+    "location.lon": -81.412727,
     "student.size": null
   },
   {
@@ -1303,8 +1303,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706506,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.254678,
+    "location.lon": -88.287365,
     "student.size": null
   },
   {
@@ -1315,8 +1315,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706507,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.044237,
+    "location.lon": -94.439222,
     "student.size": null
   },
   {
@@ -1327,8 +1327,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706508,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.762408,
+    "location.lon": -92.116461,
     "student.size": null
   },
   {
@@ -1339,8 +1339,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706509,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.570918,
+    "location.lon": -92.243915,
     "student.size": null
   },
   {
@@ -1351,8 +1351,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706510,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.198644,
+    "location.lon": -92.638797,
     "student.size": null
   },
   {
@@ -1375,8 +1375,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706512,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.735668,
+    "location.lon": -97.423566,
     "student.size": null
   },
   {
@@ -1387,8 +1387,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706513,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.657414,
+    "location.lon": -111.899111,
     "student.size": null
   },
   {
@@ -1399,8 +1399,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706514,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.378065,
+    "location.lon": -87.947978,
     "student.size": null
   },
   {
@@ -1411,8 +1411,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706515,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 48.051764,
+    "location.lon": -122.177082,
     "student.size": null
   },
   {
@@ -1423,8 +1423,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706516,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.2842,
+    "location.lon": -89.674604,
     "student.size": null
   },
   {
@@ -1435,8 +1435,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706517,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.158548,
+    "location.lon": -93.228528,
     "student.size": null
   },
   {
@@ -1447,8 +1447,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706518,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.93756,
+    "location.lon": -91.801664,
     "student.size": null
   },
   {
@@ -1459,8 +1459,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706519,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.798487,
+    "location.lon": -118.053563,
     "student.size": null
   },
   {
@@ -1471,8 +1471,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706521,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.258762,
+    "location.lon": -119.900482,
     "student.size": null
   },
   {
@@ -1483,8 +1483,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706522,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.329636,
+    "location.lon": -120.741668,
     "student.size": null
   },
   {
@@ -1495,8 +1495,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706523,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 31.857381,
+    "location.lon": -81.604716,
     "student.size": null
   },
   {
@@ -1507,8 +1507,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706524,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.017803,
+    "location.lon": -81.131127,
     "student.size": null
   },
   {
@@ -1519,8 +1519,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706525,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.017698,
+    "location.lon": -88.322832,
     "student.size": null
   },
   {
@@ -1531,8 +1531,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706527,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 48.337895,
+    "location.lon": -122.671442,
     "student.size": null
   },
   {
@@ -1543,8 +1543,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706529,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.247003,
+    "location.lon": -81.597222,
     "student.size": null
   },
   {
@@ -1555,8 +1555,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706530,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.647991,
+    "location.lon": -98.412426,
     "student.size": null
   },
   {
@@ -1567,8 +1567,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706532,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.740598,
+    "location.lon": -117.189831,
     "student.size": null
   },
   {
@@ -1579,8 +1579,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706533,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.725783,
+    "location.lon": -96.682233,
     "student.size": null
   },
   {
@@ -1591,8 +1591,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706534,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.808643,
+    "location.lon": -92.225742,
     "student.size": null
   },
   {
@@ -1603,8 +1603,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706535,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.684843,
+    "location.lon": -117.130015,
     "student.size": null
   },
   {
@@ -1615,8 +1615,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706536,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.829042,
+    "location.lon": -115.505421,
     "student.size": null
   },
   {
@@ -1627,8 +1627,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706537,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.801543,
+    "location.lon": -81.562385,
     "student.size": null
   },
   {
@@ -1639,8 +1639,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706539,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 48.419374,
+    "location.lon": -101.32446,
     "student.size": null
   },
   {
@@ -1651,8 +1651,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706540,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.158548,
+    "location.lon": -93.228528,
     "student.size": null
   },
   {
@@ -1663,8 +1663,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706541,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.364118,
+    "location.lon": -111.73854,
     "student.size": null
   },
   {
@@ -1675,8 +1675,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706542,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.725231,
+    "location.lon": -92.164672,
     "student.size": null
   },
   {
@@ -1687,8 +1687,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 17706543,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 21.443799,
+    "location.lon": -157.757065,
     "student.size": null
   },
   {
@@ -1699,8 +1699,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 18017901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 45.796577,
+    "location.lon": -108.521866,
     "student.size": null
   },
   {
@@ -1711,8 +1711,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 18908801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.204259,
+    "location.lon": -72.616201,
     "student.size": null
   },
   {
@@ -1723,8 +1723,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 18908803,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.023073,
+    "location.lon": -73.909314,
     "student.size": null
   },
   {
@@ -1735,8 +1735,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 18908804,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.023073,
+    "location.lon": -73.909314,
     "student.size": null
   },
   {
@@ -1759,8 +1759,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 18908807,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.023073,
+    "location.lon": -73.909314,
     "student.size": null
   },
   {
@@ -1771,8 +1771,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 18908809,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.023073,
+    "location.lon": -73.909314,
     "student.size": null
   },
   {
@@ -1783,8 +1783,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 18956501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.059079,
+    "location.lon": -76.137053,
     "student.size": null
   },
   {
@@ -1795,8 +1795,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 18958301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.040823,
+    "location.lon": -78.742811,
     "student.size": null
   },
   {
@@ -1819,8 +1819,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 18959201,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.887263,
+    "location.lon": -78.869112,
     "student.size": null
   },
   {
@@ -1831,8 +1831,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 19050301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.514564,
+    "location.lon": -122.484827,
     "student.size": null
   },
   {
@@ -1843,8 +1843,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 19050302,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.44315,
+    "location.lon": -98.480388,
     "student.size": null
   },
   {
@@ -1855,8 +1855,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 19200401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.095547,
+    "location.lon": -79.249754,
     "student.size": null
   },
   {
@@ -1867,8 +1867,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 19457801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.691384,
+    "location.lon": -73.962986,
     "student.size": null
   },
   {
@@ -1879,8 +1879,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 19476301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.723156,
+    "location.lon": -73.817192,
     "student.size": null
   },
   {
@@ -1891,8 +1891,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 19580901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.621374,
+    "location.lon": -74.090818,
     "student.size": null
   },
   {
@@ -1903,8 +1903,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 19857001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.309615,
+    "location.lon": -81.191159,
     "student.size": null
   },
   {
@@ -1915,8 +1915,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 20146901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.128167,
+    "location.lon": -81.655003,
     "student.size": null
   },
   {
@@ -1927,8 +1927,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 20146902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.38998,
+    "location.lon": -81.445978,
     "student.size": null
   },
   {
@@ -1939,8 +1939,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 20146903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.502211,
+    "location.lon": -81.666759,
     "student.size": null
   },
   {
@@ -1951,8 +1951,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 20417601,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.956314,
+    "location.lon": -83.02119,
     "student.size": null
   },
   {
@@ -1963,8 +1963,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 20627901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.054908,
+    "location.lon": -118.242643,
     "student.size": null
   },
   {
@@ -1975,8 +1975,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 20627902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.462415,
+    "location.lon": -81.456203,
     "student.size": null
   },
   {
@@ -1987,8 +1987,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 20627903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.721137,
+    "location.lon": -77.126722,
     "student.size": null
   },
   {
@@ -1999,8 +1999,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21130701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.239038,
+    "location.lon": -74.967179,
     "student.size": null
   },
   {
@@ -2011,8 +2011,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21130702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.112761,
+    "location.lon": -74.876588,
     "student.size": null
   },
   {
@@ -2023,8 +2023,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21287801,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.040994,
+    "location.lon": -76.268143,
     "student.size": null
   },
   {
@@ -2035,8 +2035,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21287802,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.29434,
+    "location.lon": -76.884496,
     "student.size": null
   },
   {
@@ -2047,8 +2047,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21287803,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.339605,
+    "location.lon": -76.422912,
     "student.size": null
   },
   {
@@ -2059,8 +2059,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21287804,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.29434,
+    "location.lon": -76.884496,
     "student.size": null
   },
   {
@@ -2071,8 +2071,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 21316301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.441466,
+    "location.lon": -79.994828,
     "student.size": null
   },
   {
@@ -2095,8 +2095,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 21437901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.672433,
+    "location.lon": -75.325747,
     "student.size": null
   },
   {
@@ -2107,8 +2107,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 21608301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.471285,
+    "location.lon": -78.422765,
     "student.size": null
   },
   {
@@ -2119,8 +2119,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 22055202,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.55374,
+    "location.lon": -82.519015,
     "student.size": null
   },
   {
@@ -2131,8 +2131,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 22055203,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.144579,
+    "location.lon": -86.690496,
     "student.size": null
   },
   {
@@ -2143,8 +2143,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 22055204,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.84782,
+    "location.lon": -84.305739,
     "student.size": null
   },
   {
@@ -2155,8 +2155,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 22797901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.810848,
+    "location.lon": -95.180689,
     "student.size": null
   },
   {
@@ -2167,8 +2167,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 22797902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.579936,
+    "location.lon": -95.203425,
     "student.size": null
   },
   {
@@ -2179,8 +2179,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 22797903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.657063,
+    "location.lon": -95.113607,
     "student.size": null
   },
   {
@@ -2191,8 +2191,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 22872301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.618681,
+    "location.lon": -96.336465,
     "student.size": null
   },
   {
@@ -2203,8 +2203,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23059701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.766655,
+    "location.lon": -112.098602,
     "student.size": null
   },
   {
@@ -2215,8 +2215,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23091302,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.545309,
+    "location.lon": -72.000072,
     "student.size": null
   },
   {
@@ -2227,8 +2227,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23178501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.46014,
+    "location.lon": -77.542404,
     "student.size": null
   },
   {
@@ -2239,8 +2239,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23178502,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.044599,
+    "location.lon": -76.391494,
     "student.size": null
   },
   {
@@ -2251,8 +2251,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.801627,
+    "location.lon": -77.080123,
     "student.size": null
   },
   {
@@ -2263,8 +2263,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.657731,
+    "location.lon": -77.301479,
     "student.size": null
   },
   {
@@ -2275,8 +2275,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368404,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.801627,
+    "location.lon": -77.080123,
     "student.size": null
   },
   {
@@ -2287,8 +2287,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368405,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.336105,
+    "location.lon": -77.498248,
     "student.size": null
   },
   {
@@ -2299,8 +2299,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368408,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.663108,
+    "location.lon": -90.577067,
     "student.size": null
   },
   {
@@ -2311,8 +2311,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368410,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.0852,
+    "location.lon": -76.472647,
     "student.size": null
   },
   {
@@ -2323,8 +2323,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 23368411,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.843176,
+    "location.lon": -76.132992,
     "student.size": null
   },
   {
@@ -2335,8 +2335,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23661001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 47.755966,
+    "location.lon": -122.345697,
     "student.size": null
   },
   {
@@ -2347,8 +2347,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23661002,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 47.747453,
+    "location.lon": -122.358627,
     "student.size": null
   },
   {
@@ -2359,8 +2359,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23693901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 45.731564,
+    "location.lon": -122.636277,
     "student.size": null
   },
   {
@@ -2371,8 +2371,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 23693903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.32944,
+    "location.lon": -119.263174,
     "student.size": null
   },
   {
@@ -2383,8 +2383,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297201,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.47444,
+    "location.lon": -66.719765,
     "student.size": null
   },
   {
@@ -2395,8 +2395,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297202,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.38024,
+    "location.lon": -65.852672,
     "student.size": null
   },
   {
@@ -2407,8 +2407,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297203,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.039541,
+    "location.lon": -66.548255,
     "student.size": null
   },
   {
@@ -2419,8 +2419,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297204,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.223358,
+    "location.lon": -66.039881,
     "student.size": null
   },
   {
@@ -2431,8 +2431,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297205,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.184179,
+    "location.lon": -67.150298,
     "student.size": null
   },
   {
@@ -2443,8 +2443,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297206,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.664827,
+    "location.lon": -81.515754,
     "student.size": null
   },
   {
@@ -2455,8 +2455,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297207,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.039465,
+    "location.lon": -81.949804,
     "student.size": null
   },
   {
@@ -2467,8 +2467,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297208,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.028318,
+    "location.lon": -81.303118,
     "student.size": null
   },
   {
@@ -2479,8 +2479,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297209,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.292058,
+    "location.lon": -81.40773,
     "student.size": null
   },
   {
@@ -2491,8 +2491,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297210,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.007765,
+    "location.lon": -80.296256,
     "student.size": null
   },
   {
@@ -2503,8 +2503,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297211,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.580832,
+    "location.lon": -80.346859,
     "student.size": null
   },
   {
@@ -2515,8 +2515,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297212,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.005693,
+    "location.lon": -66.614118,
     "student.size": null
   },
   {
@@ -2527,8 +2527,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297213,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.206308,
+    "location.lon": -67.165616,
     "student.size": null
   },
   {
@@ -2539,8 +2539,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297214,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 17.980256,
+    "location.lon": -66.121452,
     "student.size": null
   },
   {
@@ -2551,8 +2551,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297215,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.325215,
+    "location.lon": -65.653936,
     "student.size": null
   },
   {
@@ -2563,8 +2563,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297216,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.477684,
+    "location.lon": -66.498579,
     "student.size": null
   },
   {
@@ -2599,8 +2599,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297219,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.447141,
+    "location.lon": -67.109224,
     "student.size": null
   },
   {
@@ -2611,8 +2611,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297220,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.251015,
+    "location.lon": -66.035294,
     "student.size": null
   },
   {
@@ -2623,8 +2623,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297221,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.473411,
+    "location.lon": -66.718888,
     "student.size": null
   },
   {
@@ -2647,8 +2647,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297223,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.40646,
+    "location.lon": -66.19092,
     "student.size": null
   },
   {
@@ -2659,8 +2659,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297224,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.026032,
+    "location.lon": -66.858587,
     "student.size": null
   },
   {
@@ -2671,8 +2671,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297225,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.538383,
+    "location.lon": -81.378927,
     "student.size": null
   },
   {
@@ -2683,8 +2683,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24297226,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.95169,
+    "location.lon": -82.458753,
     "student.size": null
   },
   {
@@ -2695,8 +2695,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24366501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 18.343234,
+    "location.lon": -64.97288,
     "student.size": null
   },
   {
@@ -2707,8 +2707,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.10532,
+    "location.lon": -85.680254,
     "student.size": null
   },
   {
@@ -2719,8 +2719,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378002,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.768403,
+    "location.lon": -86.158068,
     "student.size": null
   },
   {
@@ -2731,8 +2731,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378003,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.676355,
+    "location.lon": -86.25199,
     "student.size": null
   },
   {
@@ -2743,8 +2743,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378004,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.285625,
+    "location.lon": -85.824131,
     "student.size": null
   },
   {
@@ -2767,8 +2767,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378007,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.486427,
+    "location.lon": -86.133603,
     "student.size": null
   },
   {
@@ -2779,8 +2779,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378008,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.427805,
+    "location.lon": -86.911141,
     "student.size": null
   },
   {
@@ -2791,8 +2791,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378009,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.427805,
+    "location.lon": -86.911141,
     "student.size": null
   },
   {
@@ -2803,8 +2803,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 24378010,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.427805,
+    "location.lon": -86.911141,
     "student.size": null
   },
   {
@@ -2815,8 +2815,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.091053,
+    "location.lon": -76.462218,
     "student.size": null
   },
   {
@@ -2827,8 +2827,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.110773,
+    "location.lon": -79.961712,
     "student.size": null
   },
   {
@@ -2839,8 +2839,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893403,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.218767,
+    "location.lon": -80.921913,
     "student.size": null
   },
   {
@@ -2851,8 +2851,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893404,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.844396,
+    "location.lon": -82.317983,
     "student.size": null
   },
   {
@@ -2863,8 +2863,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893405,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.806638,
+    "location.lon": -77.495658,
     "student.size": null
   },
   {
@@ -2875,8 +2875,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893406,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.776475,
+    "location.lon": -79.931051,
     "student.size": null
   },
   {
@@ -2887,8 +2887,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893407,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.872442,
+    "location.lon": -78.723634,
     "student.size": null
   },
   {
@@ -2899,8 +2899,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893408,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.035469,
+    "location.lon": -81.118012,
     "student.size": null
   },
   {
@@ -2911,8 +2911,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893410,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.878545,
+    "location.lon": -76.214784,
     "student.size": null
   },
   {
@@ -2923,8 +2923,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893411,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.842538,
+    "location.lon": -76.178872,
     "student.size": null
   },
   {
@@ -2935,8 +2935,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893412,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.608887,
+    "location.lon": -77.52654,
     "student.size": null
   },
   {
@@ -2971,8 +2971,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893415,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.319889,
+    "location.lon": -79.959407,
     "student.size": null
   },
   {
@@ -2983,8 +2983,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893416,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.776913,
+    "location.lon": -81.353624,
     "student.size": null
   },
   {
@@ -2995,8 +2995,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893417,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 37.086799,
+    "location.lon": -76.474966,
     "student.size": null
   },
   {
@@ -3007,8 +3007,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 24893418,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.494253,
+    "location.lon": -98.555621,
     "student.size": null
   },
   {
@@ -3019,8 +3019,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 38561901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.635139,
+    "location.lon": -81.389081,
     "student.size": null
   },
   {
@@ -3031,8 +3031,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 38561902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.38361,
+    "location.lon": -82.44537,
     "student.size": null
   },
   {
@@ -3043,8 +3043,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 38561903,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 27.94445,
+    "location.lon": -82.529148,
     "student.size": null
   },
   {
@@ -3055,8 +3055,8 @@
     "school.ownership": 2,
     "school.degrees_awarded.highest": 0,
     "id": 38561904,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.690905,
+    "location.lon": -80.383412,
     "student.size": null
   },
   {
@@ -3067,8 +3067,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 40884401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.747809,
+    "location.lon": -80.387103,
     "student.size": null
   },
   {
@@ -3079,8 +3079,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 40884402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.859941,
+    "location.lon": -80.307718,
     "student.size": null
   },
   {
@@ -3091,8 +3091,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 41918301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.139249,
+    "location.lon": -120.359746,
     "student.size": null
   },
   {
@@ -3103,8 +3103,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 42817001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.922882,
+    "location.lon": -80.296312,
     "student.size": null
   },
   {
@@ -3115,8 +3115,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 43018401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.098191,
+    "location.lon": -77.179885,
     "student.size": null
   },
   {
@@ -3127,8 +3127,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 43018402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.953011,
+    "location.lon": -76.548823,
     "student.size": null
   },
   {
@@ -3139,8 +3139,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 43018403,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.368623,
+    "location.lon": -76.461464,
     "student.size": null
   },
   {
@@ -3151,8 +3151,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 43018404,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.424993,
+    "location.lon": -76.813189,
     "student.size": null
   },
   {
@@ -3163,8 +3163,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 43342002,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.243214,
+    "location.lon": -119.209699,
     "student.size": null
   },
   {
@@ -3175,8 +3175,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44376601,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 36.15463,
+    "location.lon": -86.771907,
     "student.size": null
   },
   {
@@ -3187,8 +3187,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44376602,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.801627,
+    "location.lon": -77.080123,
     "student.size": null
   },
   {
@@ -3199,8 +3199,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44376603,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.962406,
+    "location.lon": -83.916056,
     "student.size": null
   },
   {
@@ -3211,8 +3211,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44378401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.743578,
+    "location.lon": -75.547903,
     "student.size": null
   },
   {
@@ -3235,8 +3235,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44378406,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.602918,
+    "location.lon": -75.468714,
     "student.size": null
   },
   {
@@ -3247,8 +3247,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44784701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.292058,
+    "location.lon": -81.40773,
     "student.size": null
   },
   {
@@ -3259,8 +3259,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44867301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.793046,
+    "location.lon": -88.371205,
     "student.size": null
   },
   {
@@ -3271,8 +3271,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44867302,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.653092,
+    "location.lon": -88.128803,
     "student.size": null
   },
   {
@@ -3283,8 +3283,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44867303,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.550856,
+    "location.lon": -87.82742,
     "student.size": null
   },
   {
@@ -3295,8 +3295,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44903803,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 28.57386,
+    "location.lon": -81.208147,
     "student.size": null
   },
   {
@@ -3307,8 +3307,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44903804,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.801627,
+    "location.lon": -77.080123,
     "student.size": null
   },
   {
@@ -3319,8 +3319,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44903805,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.322588,
+    "location.lon": -81.673558,
     "student.size": null
   },
   {
@@ -3331,8 +3331,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44903809,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 25.980608,
+    "location.lon": -80.339194,
     "student.size": null
   },
   {
@@ -3343,8 +3343,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44970001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.692709,
+    "location.lon": -84.15079,
     "student.size": null
   },
   {
@@ -3355,8 +3355,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44970002,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.271201,
+    "location.lon": -84.368573,
     "student.size": null
   },
   {
@@ -3367,8 +3367,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44970003,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.373721,
+    "location.lon": -81.829917,
     "student.size": null
   },
   {
@@ -3379,8 +3379,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 44970004,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.089678,
+    "location.lon": -83.125617,
     "student.size": null
   },
   {
@@ -3391,8 +3391,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45037701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.731982,
+    "location.lon": -86.656061,
     "student.size": null
   },
   {
@@ -3403,8 +3403,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45037702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.378401,
+    "location.lon": -86.311012,
     "student.size": null
   },
   {
@@ -3415,8 +3415,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45057102,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 44.975805,
+    "location.lon": -89.657887,
     "student.size": null
   },
   {
@@ -3427,8 +3427,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45175001,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 43.118935,
+    "location.lon": -87.915347,
     "student.size": null
   },
   {
@@ -3439,8 +3439,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45175002,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.717945,
+    "location.lon": -87.865113,
     "student.size": null
   },
   {
@@ -3451,8 +3451,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45316301,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.227087,
+    "location.lon": -80.843127,
     "student.size": null
   },
   {
@@ -3463,8 +3463,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45316302,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.13902,
+    "location.lon": -80.930458,
     "student.size": null
   },
   {
@@ -3475,8 +3475,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45316303,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.881208,
+    "location.lon": -78.625832,
     "student.size": null
   },
   {
@@ -3487,8 +3487,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45316306,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 35.77959,
+    "location.lon": -78.638179,
     "student.size": null
   },
   {
@@ -3499,8 +3499,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45486501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.438263,
+    "location.lon": -80.124228,
     "student.size": null
   },
   {
@@ -3511,8 +3511,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891901,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.801627,
+    "location.lon": -77.080123,
     "student.size": null
   },
   {
@@ -3523,8 +3523,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891902,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.571352,
+    "location.lon": -84.33148,
     "student.size": null
   },
   {
@@ -3535,8 +3535,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891905,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.712331,
+    "location.lon": -84.105194,
     "student.size": null
   },
   {
@@ -3547,8 +3547,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891906,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.07045,
+    "location.lon": -81.148176,
     "student.size": null
   },
   {
@@ -3559,8 +3559,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891907,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.469373,
+    "location.lon": -82.085364,
     "student.size": null
   },
   {
@@ -3571,8 +3571,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891908,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.140482,
+    "location.lon": -82.968921,
     "student.size": null
   },
   {
@@ -3583,8 +3583,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45891909,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.83227,
+    "location.lon": -83.627735,
     "student.size": null
   },
   {
@@ -3595,8 +3595,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45896401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 34.042351,
+    "location.lon": -81.110357,
     "student.size": null
   },
   {
@@ -3607,8 +3607,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45896402,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.802397,
+    "location.lon": -79.944836,
     "student.size": null
   },
   {
@@ -3619,8 +3619,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45897305,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.5954,
+    "location.lon": -96.944554,
     "student.size": null
   },
   {
@@ -3631,8 +3631,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45897307,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.519175,
+    "location.lon": -98.490343,
     "student.size": null
   },
   {
@@ -3643,8 +3643,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45897308,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.637995,
+    "location.lon": -95.581667,
     "student.size": null
   },
   {
@@ -3655,8 +3655,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 45897309,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 29.786785,
+    "location.lon": -95.642092,
     "student.size": null
   },
   {
@@ -3667,8 +3667,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 46131501,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 46.782296,
+    "location.lon": -88.507706,
     "student.size": null
   },
   {
@@ -3679,8 +3679,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 48065701,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 38.927906,
+    "location.lon": -94.719871,
     "student.size": null
   },
   {
@@ -3691,8 +3691,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511101,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.102345,
+    "location.lon": -84.3427,
     "student.size": null
   },
   {
@@ -3703,8 +3703,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511103,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 30.890804,
+    "location.lon": -83.266772,
     "student.size": null
   },
   {
@@ -3715,8 +3715,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511104,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.413117,
+    "location.lon": -82.138384,
     "student.size": null
   },
   {
@@ -3727,8 +3727,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511105,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.57173,
+    "location.lon": -84.573093,
     "student.size": null
   },
   {
@@ -3739,8 +3739,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511106,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.078918,
+    "location.lon": -83.223517,
     "student.size": null
   },
   {
@@ -3751,8 +3751,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511107,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.460976,
+    "location.lon": -84.987709,
     "student.size": null
   },
   {
@@ -3763,8 +3763,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511108,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.966308,
+    "location.lon": -82.804973,
     "student.size": null
   },
   {
@@ -3775,8 +3775,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511109,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.594653,
+    "location.lon": -83.469426,
     "student.size": null
   },
   {
@@ -3787,8 +3787,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511110,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.806533,
+    "location.lon": -84.171229,
     "student.size": null
   },
   {
@@ -3799,8 +3799,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511111,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.456644,
+    "location.lon": -84.511676,
     "student.size": null
   },
   {
@@ -3811,8 +3811,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511112,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 32.157435,
+    "location.lon": -82.907123,
     "student.size": null
   },
   {
@@ -3823,8 +3823,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 48511113,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 33.078918,
+    "location.lon": -83.223517,
     "student.size": null
   },
   {
@@ -3835,8 +3835,8 @@
     "school.ownership": 3,
     "school.degrees_awarded.highest": 0,
     "id": 49005401,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 26.204178,
+    "location.lon": -80.160389,
     "student.size": null
   },
   {
@@ -3847,8 +3847,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576702,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.832693,
+    "location.lon": -77.841582,
     "student.size": null
   },
   {
@@ -3859,8 +3859,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576704,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.729185,
+    "location.lon": -75.247906,
     "student.size": null
   },
   {
@@ -3871,8 +3871,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576705,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.518681,
+    "location.lon": -78.394736,
     "student.size": null
   },
   {
@@ -3883,8 +3883,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576706,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.678811,
+    "location.lon": -80.296376,
     "student.size": null
   },
   {
@@ -3895,8 +3895,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576707,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 42.129224,
+    "location.lon": -80.085059,
     "student.size": null
   },
   {
@@ -3907,8 +3907,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576708,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.358778,
+    "location.lon": -75.974263,
     "student.size": null
   },
   {
@@ -3919,8 +3919,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576709,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.121012,
+    "location.lon": -78.758326,
     "student.size": null
   },
   {
@@ -3931,8 +3931,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576710,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.203322,
+    "location.lon": -77.194525,
     "student.size": null
   },
   {
@@ -3943,8 +3943,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576711,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.958418,
+    "location.lon": -75.974647,
     "student.size": null
   },
   {
@@ -3955,8 +3955,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576712,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.445081,
+    "location.lon": -80.008775,
     "student.size": null
   },
   {
@@ -3967,8 +3967,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576713,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.84075,
+    "location.lon": -77.543306,
     "student.size": null
   },
   {
@@ -3979,8 +3979,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576714,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.569789,
+    "location.lon": -79.76477,
     "student.size": null
   },
   {
@@ -3991,8 +3991,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576715,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.115266,
+    "location.lon": -75.110626,
     "student.size": null
   },
   {
@@ -4003,8 +4003,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576716,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.640919,
+    "location.lon": -76.165031,
     "student.size": null
   },
   {
@@ -4015,8 +4015,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576717,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.408969,
+    "location.lon": -75.662412,
     "student.size": null
   },
   {
@@ -4027,8 +4027,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576718,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.235211,
+    "location.lon": -80.5092,
     "student.size": null
   },
   {
@@ -4039,8 +4039,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576719,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 41.305566,
+    "location.lon": -76.015243,
     "student.size": null
   },
   {
@@ -4051,8 +4051,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576720,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 39.951077,
+    "location.lon": -76.704339,
     "student.size": null
   },
   {
@@ -4063,8 +4063,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576722,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.204246,
+    "location.lon": -76.745174,
     "student.size": null
   },
   {
@@ -4075,8 +4075,8 @@
     "school.ownership": 1,
     "school.degrees_awarded.highest": 0,
     "id": 49576723,
-    "location.lat": null,
-    "location.lon": null,
+    "location.lat": 40.798213,
+    "location.lon": -77.859908,
     "student.size": null
   }
 ]
