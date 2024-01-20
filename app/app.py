@@ -6,11 +6,13 @@ from models.college_model import College
 
 app = Flask(__name__)
 
+exec(open("heatmap.py").read())
 client = MongoClient('localhost', 27017)
 
 
 # Set up MongoDB URI from environment variable
 load_dotenv()
+
 mongo_uri = os.environ.get("DB_URL")
 
 client = MongoClient(mongo_uri)
@@ -41,7 +43,7 @@ def index():
                      #  degree_length=college['latest.academics.program_reporter.program']
                      )
              for college in colleges]
-    return render_template('index.html', colleges=items)
+    return render_template('heatmap.html', colleges=items)
 
 
 if __name__ == "__main__":
