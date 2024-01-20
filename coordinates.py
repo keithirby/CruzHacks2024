@@ -40,16 +40,6 @@ def find_coordinates(address):
         return None
 
 
-def main():
-    
-
-    coordinates = find_coordinates("Clarks Summit University")
-
-    print(coordinates)
-
-main()
-
-
 
 
 
