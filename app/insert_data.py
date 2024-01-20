@@ -12,7 +12,7 @@ db = client['morphius']  # Replace with your MongoDB database name
 collection = db['colleges']  # Replace with your desired collection name
 
 # Read data from the file
-with open('data/whole_data.txt', 'r') as file:
+with open('data/null_location.txt', 'r') as file:
     colleges = json.load(file)
     for college in colleges:
         try:
