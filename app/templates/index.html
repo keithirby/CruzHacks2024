@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flask MongoDB Example</title>
+    </head>
+    <body>
+        <h1>Data from MongoDB</h1>
+        <ul>
+            {% for college in colleges %}
+            <li>
+                Id: {{ college['_id'] }}<br />
+                School: {{ college['school_name'] }}<br />
+                Tuition (In-State): {{ college['tuition_in_state'] }}<br />
+                Tuition (Out-of-State): {{ college['tuition_out_of_state'] }}<br />
+                Longitude, Latitude: {{ college['longitude']}}, {{
+                college['latitude'] }}<br />
+                <br />
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
