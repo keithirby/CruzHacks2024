@@ -22,16 +22,16 @@ data =""
 if response.status_code == 200:
 
     data = response.json()
-    print(data)
+    # print(data)
     # Make the data type to string
-    current_data = json.dumps(data)
-
+    current_data = json.dumps(data, indent=2)
+ 
+    # Write out the text document
+    file_path = 'output.json'
+    with open(file_path, 'w') as f:
+        f.write(current_data)
 else:
     # Handle the case where the request was
     print("API request failed with status code:", response.status_code)
     print("API response content:", response.text)
- 
-# Write out the text document    
-file_path = 'output.json'
-with open(file_path, 'w') as f:
-        f.write(str(data)) 
+
