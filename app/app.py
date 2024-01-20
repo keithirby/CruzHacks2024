@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
-from app.models import College
+from app.models.college_model import College
 
 app = Flask(__name__)
 
