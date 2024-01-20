@@ -1,1 +1,5 @@
 python-dotenv
+folium
+flask
+pymongo
+dotenv

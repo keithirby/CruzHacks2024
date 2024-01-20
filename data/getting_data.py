@@ -1,9 +1,20 @@
 import requests
 import json
+<<<<<<< HEAD:data/getting_data.py
 from dotenv import load_dotenv
 import os
+=======
+import logging
+>>>>>>> 1470e6981198bf7344feba76a151fb447f2569bc:getting_data.py
 
-# college_name = input("Enter college name: ")
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+college_name = input("Enter college name: ")
+school_name = []
+tuition_in_state = []
+tuition_out_of_state = []
+latitude = []
+longitude = []
 
 load_dotenv()
 api_key = os.environ.get("GOV_API")
@@ -19,9 +30,27 @@ params = {
     'page': 0,
     'per_page': 100,
 }
+#the GET request to the API
+response = requests.get(url, params=params)
 
-for i in range(328):
-    params['page'] = i
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+##########################
+###send this to the db ###
+##########################
+        
+    data = response.json()
+    # Make the data type to string
+    parsed_data = json.dumps(data)
+    parsed_data = json.loads(parsed_data)
+    #how many universities will there be?
+    x = len(parsed_data[:]['school.name'])
+    for i in range(x):
+        school_name.append(parsed_data['results'][i]['school.name'])
+        tuition_in_state.append(parsed_data['results'][i]['latest.cost.tuition.in_state'])
+        tuition_out_of_state.append(parsed_data['results'][i]['latest.cost.tuition.out_of_state'])
+        latitude.append(parsed_data['results'][i]['location.lat'])
+        longitude.append(parsed_data['results'][i]['location.lon'])
 
     # the GET request to the API
     response = requests.get(url, params=params)
