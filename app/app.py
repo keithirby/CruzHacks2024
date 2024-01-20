@@ -35,7 +35,7 @@ def index():
                      latitude=college['location.lat'],
                      longitude=college['location.lon'],
                      school_type=college['school.ownership'],
-                     #  degree_length=college['latest.academics.progdram_reporter.program']
+                     degree_length=college['school.degrees_awarded.highest']
                      )
              for college in colleges]
     return render_template('index.html', colleges=items)
