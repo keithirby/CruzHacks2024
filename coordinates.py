@@ -57,17 +57,19 @@ def read_json():
             for entry in data:
                 school_name = entry.get('school.name')
                 if school_name:
-                    entry['location.lat'] = 1
-                    entry['location.lon'] = 1
-                    print(f"Updated location for {school_name}")
-                else:
-                    print("School name not found in JSON entry.")
+                    try:
+                        latitude, longitude = find_coordinates(school_name)
+                        entry['location.lat'] = latitude
+                        entry['location.lon'] = longitude
+                        print(f"Updated location for {school_name}")
+                    except Exception as ex:
+                        print(f"Error updating location for {school_name}: {ex}")
 
-        # Write the updated data back to the file
-        with open(file_path, 'w') as file:
-            json.dump(data, file, indent=2)
-        
-        print("Location values updated and saved to the file.")
+            # Write the updated data back to the file
+            with open(file_path, 'w') as file:
+                json.dump(data, file, indent=2)
+            
+            print("Location values updated and saved to the file.")
     except FileNotFoundError:
         print(f"File not found: {file_path}")
     except json.JSONDecodeError as e:
