@@ -1,7 +1,12 @@
 import requests
 import json
+from dotenv import load_dotenv
+import os
 
 # college_name = input("Enter college name: ")
+
+load_dotenv()
+api_key = os.environ.get("GOV_API")
 
 # Define the API endpoint URL
 url = "https://api.data.gov/ed/collegescorecard/v1/schools.json"
@@ -11,15 +16,14 @@ params = {
     # 'school.name': f'{collesage_name}',
     # '_fields': 'id,school.name,student.size,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,location.lat,location.lon',
     '_fields': 'school.state',
-    'api_key': 'aOIU3LYrzoO4z7Kaa3vqkp3UMS1to4KglDbdKyT0',
+    'api_key': api_key,
     'page': 0
 }
 
 for i in range(328):
     params['page'] = i
 
-
-    #the GET request to the API
+    # the GET request to the API
     response = requests.get(url, params=params)
 
     # Check if the request was successful (status code 200)
@@ -34,9 +38,9 @@ for i in range(328):
         # Handle the case where the request was
         print("API request failed with status code:", response.status_code)
         print("API response content:", response.text)
-    
-    # # Write out the text document    
+
+    # # Write out the text document
     # file_path = r'./output.txt'
     # with open(file_path, 'a') as f:
-    #         f.write("Data:\n") 
+    #         f.write("Data:\n")
     #         f.write(current_data)
