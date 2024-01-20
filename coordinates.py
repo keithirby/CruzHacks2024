@@ -10,7 +10,7 @@ from geopy.geocoders import GoogleV3
 
 
 
-def grab_key():
+def grab_API_KEY():
     # Load the .env file
     load_dotenv()
 
@@ -21,8 +21,23 @@ def grab_key():
     return GOOGLE_KEY
 
 
-# Grabbing the Google API Key and making it a global variable to reduce calls to grab_key
-KEY = grab_key()
+def grab_DB_URL():
+    #load the .env file
+    load_dotenv()
+
+    # Grab the DB URL
+    DB_URL = os.getenv("DB_URL")
+
+    return DB_URL
+
+
+
+
+# Grabbing the Google API Key and making it a global variable to reduce calls to grab_API_KEY
+KEY = grab_API_KEY()
+
+# Grabbing the DB URL and making it a global variable to reduce calls to grab_DB_URL
+URL = grab_DB_URL()
 
 def find_coordinates(address):
     geolocator = GoogleV3(KEY)
@@ -43,6 +58,7 @@ def find_coordinates(address):
         print(f"Error: {e}")
         return None
 
+def open_db()
 
 
 
