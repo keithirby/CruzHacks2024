@@ -6,9 +6,6 @@ from models.college_model import College
 
 app = Flask(__name__)
 
-client = MongoClient('localhost', 27017)
-
-
 # Set up MongoDB URI from environment variable
 load_dotenv()
 mongo_uri = os.environ.get("DB_URL")
@@ -32,13 +29,13 @@ def index():
     items = [College(id=college['id'],
                      school_name=college['school.name'],
                      student_size=college['student.size'],
-                     #  state=college['school.state'],
+                     state=college['school.state'],
                      tuition_in_state=college['latest.cost.tuition.in_state'],
                      tuition_out_of_state=college['latest.cost.tuition.out_of_state'],
                      latitude=college['location.lat'],
                      longitude=college['location.lon'],
-                     #  school_type=college['school.ownership'],
-                     #  degree_length=college['latest.academics.program_reporter.program']
+                     school_type=college['school.ownership'],
+                     #  degree_length=college['latest.academics.progdram_reporter.program']
                      )
              for college in colleges]
     return render_template('index.html', colleges=items)

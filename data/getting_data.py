@@ -14,10 +14,10 @@ params = {
     # 'school.degrees_awarded.predominant': '3',
     # 'school.ownership': '1',
     # 'school.name': f'{collesage_name}',
-    # '_fields': 'id,school.name,student.size,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,location.lat,location.lon',
-    '_fields': 'school.state',
+    '_fields': 'id,school.name,student.size,school.state,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,location.lat,location.lon,school.ownership,school.degrees_awarded.highest',
     'api_key': api_key,
-    'page': 0
+    'page': 0,
+    'per_page': 100,
 }
 
 for i in range(328):
@@ -30,7 +30,7 @@ for i in range(328):
     if response.status_code == 200:
 
         data = response.json()
-        print(data)
+        # print(data)
         # Make the data type to string
         current_data = json.dumps(data)
 
@@ -39,8 +39,11 @@ for i in range(328):
         print("API request failed with status code:", response.status_code)
         print("API response content:", response.text)
 
-    # # Write out the text document
-    # file_path = r'./output.txt'
-    # with open(file_path, 'a') as f:
-    #         f.write("Data:\n")
-    #         f.write(current_data)
+    # Write out the text document
+    file_path = r'./output.txt'
+    with open(file_path, 'a') as f:
+        f.write(current_data)
+        f.write('\n')
+
+    if current_data == None:
+        break
