@@ -21,23 +21,9 @@ def grab_API_KEY():
     return GOOGLE_KEY
 
 
-def grab_DB_URL():
-    #load the .env file
-    load_dotenv()
-
-    # Grab the DB URL
-    DB_URL = os.getenv("DB_URL")
-
-    return DB_URL
-
-
-
-
 # Grabbing the Google API Key and making it a global variable to reduce calls to grab_API_KEY
 KEY = grab_API_KEY()
 
-# Grabbing the DB URL and making it a global variable to reduce calls to grab_DB_URL
-URL = grab_DB_URL()
 
 def find_coordinates(address):
     geolocator = GoogleV3(KEY)
@@ -58,7 +44,7 @@ def find_coordinates(address):
         print(f"Error: {e}")
         return None
 
-def open_db()
+
 
 
 
