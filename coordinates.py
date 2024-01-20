@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from geopy.geocoders import GoogleV3
 
 
+
 def grab_key():
     # Load the .env file
     load_dotenv()
@@ -16,8 +17,11 @@ def grab_key():
     return GOOGLE_KEY
 
 
-def find_coordinates(KEY, address):
-    geolocator = GoogleV3(api_key=KEY)
+# Grabbing the Google API Key and making it a global variable to reduce calls to grab_key
+KEY = grab_key()
+
+def find_coordinates(address):
+    geolocator = GoogleV3(KEY)
     # Try getting the coordinates from a address
     try:
         # Finding location using geocode
@@ -37,10 +41,17 @@ def find_coordinates(KEY, address):
 
 
 def main():
-    KEY = grab_key()
+    
 
-    coordinates = find_coordinates(KEY, "Clarks Summit University")
+    coordinates = find_coordinates("Clarks Summit University")
 
     print(coordinates)
 
 main()
+
+
+
+
+
+#Sources
+# thank you Jake Witcher for the .env help! https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1
