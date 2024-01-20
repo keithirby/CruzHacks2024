@@ -1,3 +1,7 @@
+# Purpose: This python file is a script to find database entries that are lacking latitude and longitude
+# but have tutiton costs to increase the number of possible entries to our heat map.
+
+
 # Libraries for grabbing API key(s)
 import os
 from dotenv import load_dotenv
