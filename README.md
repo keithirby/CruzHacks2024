@@ -7,7 +7,7 @@
 * Keith Irby
  
 
-# Summary of **[tuitionshock.us](tuitionshock.us)**
+# Summary of **[tuitionshock.us](http://tuitionshock.us)**
 
 Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States. 
 
