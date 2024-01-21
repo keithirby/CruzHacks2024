@@ -1,6 +1,7 @@
 # CruzHacks2024 **tuitionshock.us**
 
 # Group Members
+<<<<<<< HEAD
 
 -   Airi Kokuryo
 -   Dallas Meyer
@@ -10,6 +11,17 @@
 # Summary of **[tuitionshock.us](http://tuitionshock.us)**
 
 Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States.
+=======
+* [Airi Kokuryo](https://github.com/poe125)
+* [Dallas Meyer](https://github.com/dallasmeyer)
+* [Eunice Hong](https://github.com/eunbeen-hong)
+* [Keith Irby](https://github.com/keithirby)
+ 
+
+# Summary of **[tuitionshock.us](http://tuitionshock.us)**
+
+Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States. 
+>>>>>>> 2989358afb61d9f748baf733fe998ca0850e6ec7
 
 Our goal was to show the disparity between a 2-year education and a 4-year education while also highlighting the privilege of access to higher education in more expensive cities and states. We added the following filtering options to our heatmap to help highlight cost differences:
 
@@ -29,7 +41,6 @@ Our goal was to show the disparity between a 2-year education and a 4-year educa
     - In-state
     - Out-of-state
 
-In addition to this, we also added a list feature that can sort the schools by their costs in a descending and ascending order.
 
 ## Disclaimer
 
@@ -44,3 +55,12 @@ The data collected was pulled from the _U.S Department of Education College Scor
 [Open Data Maker HTTP API](https://github.com/RTICWDT/open-data-maker/blob/master/API.md)
 
 [College Scorecard API Guide](https://collegescorecard.ed.gov/data/documentation/)
+
+# Tech Stack
+
+Server: Flask 🚀\
+Database: MongoDB Atlas 📊\
+Frontend: HTML + CSS + JavaScript 🌐
+
+
+

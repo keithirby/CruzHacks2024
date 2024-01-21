@@ -25,6 +25,28 @@
                 right: 0;
                 left: 0;
             }
+              .legend {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 5vw;
+                height: 40vh;
+                left: 50%;
+                padding: 5px;
+                background: linear-gradient(to top, green, yellow, orange, red, purple);
+                text-align: center;
+              }
+
+              .legend-item {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
         </style>
 
         <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -69,30 +91,50 @@
                 left: 0%;
                 top: 0%;
             }
-            
-    #sidebar {
-        position: fixed;
-        top: 0;
-        left:0;
-        width: 160px;
-        height: 100vh;
-        background-color: #f5f5f5;
-        padding: 20px;
-        bottom: 0%;
-        box-sizing: border-box;
-        float: left; /* Float the sidebar to the left */
-    }
-    input[type="radio"] {
-        margin-bottom: 10px;
-    }
-    label {
-        display: block;
-        margin-bottom: 8px;
-    }
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+            #sidebar {
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 240px;
+                height: 100vh;
+                background-color: #242424;
+                padding: 20px;
+                bottom: 0%;
+                box-sizing: border-box;
+                float: left; /* Float the sidebar to the left */
+            }
+            #map-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+            input[type="radio"] {
+                margin-bottom: 10px;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            h4{
+                color:#ffffff;
+                font-size: 18px;
+                border-bottom: 1px solid #ffffff;
+            }
+            #RadBtn{
+                color:#ffffff;   
+            }
 
             .folium-map {
                 flex: 1;
-                margin-left: 160px; /* Adjust based on the sidebar width */
+                margin-left: 240px; /* Adjust based on the sidebar width */
                 height: 100vh; /* Take full height of the viewport */
             }
             .leaflet-container {
@@ -106,45 +148,60 @@
     </head>
     <body>
         <div class="folium-map" id="map_inner"></div>
+        <div id="map-container">
+            <div class="folium-map" id="map_inner"></div>
+        <!-- <div class="folium-map" id="map_inner"></div> -->
 
-        <div class="folium-map" id="map_inner"></div>
-  <div id="sidebar">
-  <h4>Degree Length</h4>
-  <form>
-      <label>
-          <input type="radio" name="degree" id="4yrs"> 4-years
-      </label>
-      <label>
-          <input type="radio" name="degree" id="2yrs"> 2-years
-      </label>
-      <label>
-          <input type="radio" name="degree" id="bothyrs"> both
-      </label>
-  </form>
-  <h4>School Type</h4>
-  <form>
-      <label>
-          <input type="radio" name="type" id="public"> Public
-      </label>
-      <label>
-          <input type="radio" name="type" id="private"> Private
-      </label>
-      <label>
-          <input type="radio" name="type" id="bothtypes"> both
-      </label>
-  </form>
-  <h4>Tuition Type</h4>
-  <form>
-      <label>
-          <input type="radio" name="tuition" id="instate"> in-state
-      </label>
-      <label>
-          <input type="radio" name="tuition" id="outofstate"> out of state
-      </label>
-  </form>
-</div>
 
-    </body>
+        <div id="sidebar">
+        <h4>Degree Length</h4>
+        <form id="RadBtn">
+            <label>
+                <input type="radio" name="degree" id="4yrs" checked> 4-years
+            </label>
+            <label>
+                <input type="radio" name="degree" id="2yrs"> 2-years
+            </label>
+            <label>
+                <input type="radio" name="degree" id="bothyrs"> both
+            </label>
+        </form>
+        <h4>School Type</h4>
+        <form id="RadBtn">
+            <label>
+                <input type="radio" name="type" id="public" checked> Public
+            </label>
+            <label>
+                <input type="radio" name="type" id="private"> Private
+            </label>
+            <label>
+                <input type="radio" name="type" id="bothtypes"> both
+            </label>
+        </form>
+        <h4>Tuition Type</h4>
+        <form id="RadBtn">
+            <label>
+                <input type="radio" name="tuition" id="instate" checked> in-state
+            </label>
+            <label>
+                <input type="radio" name="tuition" id="outofstate"> out of state
+            </label>
+        </form>
+
+        <br />
+
+        <h4>Legend for Tuition</h4>
+        <div class="legend">
+            <div class="legend-item">Max</div>
+            <div class="legend-item"></div>
+            <div class="legend-item"></div>
+            <div class="legend-item"></div>
+            <div class="legend-item">Min</div>
+        </div>
+      </div>
+
+
+</body>
 
     <script>
         var degree = 0; // if 0, none selected. 4yrs: 1, 2yrs: 2, both: 3
@@ -154,12 +211,12 @@
         var dot_map;
 
         document.addEventListener("DOMContentLoaded", function () {
-        
+
             // Function to update degree based on radio button selection
             function updateDegree() {
                 var degreeRadios = document.getElementsByName("degree");
                 degree = 0; // Reset to 0
-        
+
                 for (var i = 0; i < degreeRadios.length; i++) {
                     if (degreeRadios[i].checked) {
                         degree = i + 1; // Update based on 1-based index
@@ -169,12 +226,12 @@
 
                 updateHeatmap();
             }
-        
+
             // Function to update stype based on radio button selection
             function updateStype() {
                 var stypeRadios = document.getElementsByName("type");
                 stype = 0; // Reset to 0
-        
+
                 for (var i = 0; i < stypeRadios.length; i++) {
                     if (stypeRadios[i].checked) {
                         stype = i + 1; // Update based on 1-based index
@@ -184,12 +241,12 @@
 
                 updateHeatmap();
             }
-        
+
             // Function to update is_in_state based on radio button selection
             function updateIsInState() {
                 var isInStateRadio = document.getElementById("instate");
                 var isOutOfStateRadio = document.getElementById("outofstate");
-        
+
                 if (isInStateRadio.checked) {
                     is_in_state = true;
                 } else if (isOutOfStateRadio.checked) {
@@ -197,30 +254,30 @@
                 }
                 updateHeatmap();
             }
-        
+
             // Add event listeners to radio buttons
             var degreeRadios = document.getElementsByName("degree");
             var stypeRadios = document.getElementsByName("type");
             var isInStateRadio = document.getElementById("instate");
             var isOutOfStateRadio = document.getElementById("outofstate");
-        
+
             degreeRadios.forEach(function (radio) {
                 radio.addEventListener("change", updateDegree);
             });
-        
+
             stypeRadios.forEach(function (radio) {
                 radio.addEventListener("change", updateStype);
             });
-        
+
             isInStateRadio.addEventListener("change", updateIsInState);
             isOutOfStateRadio.addEventListener("change", updateIsInState);
-        
+
             function toggleButton(button, state) {
                 button.classList.toggle("active", state);
                 updateHeatmap();
         }
     });
-   
+
         // Generate the map
         colleges = `{{ colleges|tojson|safe }}`;
 
@@ -252,6 +309,8 @@
 
         tile_layer.addTo(map_inner);
 
+        var heat_maps = [];
+
         // Function to update the heatmap
         function updateHeatmap() {
             // Filter the data based on button states
@@ -265,12 +324,12 @@
                 } else if (stype === 2) { // private
                     document.getElementById("instate").disabled = true;
                     document.getElementById("outofstate").disabled = true;
-                    if (college["school_type"] === 1){  
+                    if (college["school_type"] === 1){
                         return null;
-                    } 
+                    }
                 } else if (stype === 3){
                     document.getElementById("instate").disabled = false;
-                    document.getElementById("outofstate").disabled = false;  
+                    document.getElementById("outofstate").disabled = false;
                 }
 
                 if (degree === 1 || degree === 0) { // 4 yrs
@@ -306,32 +365,55 @@
             // Remove entries with null values
             filteredData = filteredData.filter((entry) => entry !== null);
 
-            // Remove the existing heatmap layer
-            if (heat_map) {
-                map_inner.removeLayer(heat_map);
+            // Remove the existing heatmap layers
+            for (let i = 1; i <= 5; i++) {
+                const heatMapVariable = window[`heat_map${i}`];
+                if (heatMapVariable) {
+                    map_inner.removeLayer(heatMapVariable);
+                }
             }
+
             if (dot_map) {
                 map_inner.removeLayer(dot_map);
             }
 
-            // Create a new heatmap layer with the filtered data
-            heat_map = L.heatLayer(
-                filteredData.map((d) => {
-                    return [d[0], d[1], normalization(d[2])];
-                }),
-                {
-                    blur: 50,
-                    gradient: {
-                        0.0: "green",
-                        0.4: "green",
-                        0.65: "orange",
-                        1: "red",
-                    },
-                    maxZoom: 18,
-                    minOpacity: 0.5,
-                    radius: 50,
-                }
-            );
+            // Create heatmap layers for each segment
+            const colors = ["green", "yellow", "orange", "red", "purple", "black"];
+            const segmentRanges = [0, 10000, 25000, 40000, 55000, 999999]; // Adjust these ranges based on your data
+
+            for (let i = 0; i < 5; i++) {
+                const minRange = segmentRanges[i];
+                const maxRange = segmentRanges[i + 1];
+
+                const filteredDataForSegment = filteredData.filter((entry) => {
+                    const tuitionValue = entry[2];
+                    return tuitionValue >= minRange && tuitionValue < maxRange;
+                });
+
+                const color = getColorForSegment(i);
+
+                window[`heat_map${i + 1}`] = L.heatLayer(
+                    filteredDataForSegment.map((entry) => {
+                        return [entry[0], entry[1]];
+                    }), {
+                        gradient: {
+                            0.0: color,
+                            0.5: color,
+                            1.0: color,
+                        },
+                        radius: 25, // Adjust the radius based on your preference
+                        blur: 15, // Adjust the blur for the fading effect
+                    }
+                );
+
+                map_inner.addLayer(window[`heat_map${i + 1}`]);
+            }
+
+
+            // Example function to define color based on segment
+            function getColorForSegment(segment) {
+                return colors[segment];
+            }
 
             dot_map = L.layerGroup(
                 filteredData.map((entry) => {
