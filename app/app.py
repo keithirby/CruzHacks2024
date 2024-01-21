@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 # Set up MongoDB URI from environment variable
 load_dotenv()
+
 mongo_uri = os.environ.get("DB_URL")
 
 client = MongoClient(mongo_uri)
