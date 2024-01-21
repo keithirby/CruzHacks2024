@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <style>
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"
+        />
+
+        <meta
+            name="viewport"
+            content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <style>
+            #map_inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+            
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 160px;
+        height: 100vh;
+        background-color: #f5f5f5;
+        padding: 20px;
+        bottom: 0%;
+        box-sizing: border-box;
+        float: left; /* Float the sidebar to the left */
+    }
+    input[type="radio"] {
+        margin-bottom: 10px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+            .folium-map {
+                flex: 1;
+                margin-left: 160px; /* Adjust based on the sidebar width */
+                height: 100vh; /* Take full height of the viewport */
+            }
+            .leaflet-container {
+                font-size: 1rem;
+            }
+        </style>
+        <!-- include css file -->
+        <link rel="stylesheet" href="../static/css/sidebar.css" />
+
+        <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    </head>
+    <body>
+        <div class="folium-map" id="map_inner"></div>
+
+        <div class="folium-map" id="map_inner"></div>
+  <div id="sidebar">
+  <h4>Degree Length</h4>
+  <form>
+      <label>
+          <input type="radio" name="degree" id="4yrs"> 4-years
+      </label>
+      <label>
+          <input type="radio" name="degree" id="2yrs"> 2-years
+      </label>
+      <label>
+          <input type="radio" name="degree" id="bothyrs"> both
+      </label>
+  </form>
+  <h4>School Type</h4>
+  <form>
+      <label>
+          <input type="radio" name="type" id="public"> Public
+      </label>
+      <label>
+          <input type="radio" name="type" id="private"> Private
+      </label>
+      <label>
+          <input type="radio" name="type" id="bothtypes"> both
+      </label>
+  </form>
+  <h4>Tuition Type</h4>
+  <form>
+      <label>
+          <input type="radio" name="tuition" id="instate"> in-state
+      </label>
+      <label>
+          <input type="radio" name="tuition" id="outofstate"> out of state
+      </label>
+  </form>
+</div>
+
+    </body>
+
+    <script>
+        var degree = 0; // if 0, none selected. 4yrs: 1, 2yrs: 2, both: 3
+        var stype = 0; // if 0, none selected. state: 1, private: 2, both: 3
+        var is_in_state = true; // in state or out of state
+        var heat_map;
+        var dot_map;
+
+        document.addEventListener("DOMContentLoaded", function () {
+        
+            // Function to update degree based on radio button selection
+            function updateDegree() {
+                var degreeRadios = document.getElementsByName("degree");
+                degree = 0; // Reset to 0
+        
+                for (var i = 0; i < degreeRadios.length; i++) {
+                    if (degreeRadios[i].checked) {
+                        degree = i + 1; // Update based on 1-based index
+                        break;
+                    }
+                }
+
+                updateHeatmap();
+            }
+        
+            // Function to update stype based on radio button selection
+            function updateStype() {
+                var stypeRadios = document.getElementsByName("type");
+                stype = 0; // Reset to 0
+        
+                for (var i = 0; i < stypeRadios.length; i++) {
+                    if (stypeRadios[i].checked) {
+                        stype = i + 1; // Update based on 1-based index
+                        break;
+                    }
+                }
+
+                updateHeatmap();
+            }
+        
+            // Function to update is_in_state based on radio button selection
+            function updateIsInState() {
+                var isInStateRadio = document.getElementById("instate");
+                var isOutOfStateRadio = document.getElementById("outofstate");
+        
+                if (isInStateRadio.checked) {
+                    is_in_state = true;
+                } else if (isOutOfStateRadio.checked) {
+                    is_in_state = false;
+                }
+                updateHeatmap();
+            }
+        
+            // Add event listeners to radio buttons
+            var degreeRadios = document.getElementsByName("degree");
+            var stypeRadios = document.getElementsByName("type");
+            var isInStateRadio = document.getElementById("instate");
+            var isOutOfStateRadio = document.getElementById("outofstate");
+        
+            degreeRadios.forEach(function (radio) {
+                radio.addEventListener("change", updateDegree);
+            });
+        
+            stypeRadios.forEach(function (radio) {
+                radio.addEventListener("change", updateStype);
+            });
+        
+            isInStateRadio.addEventListener("change", updateIsInState);
+            isOutOfStateRadio.addEventListener("change", updateIsInState);
+        
+            function toggleButton(button, state) {
+                button.classList.toggle("active", state);
+                updateHeatmap();
+        }
+    });
+   
+        // Generate the map
+        colleges = `{{ colleges|tojson|safe }}`;
+
+        var colleges = JSON.parse(colleges);
+
+        var map_inner = L.map("map_inner", {
+            center: [37.7749, -95.4194],
+            crs: L.CRS.EPSG3857,
+            zoom: 4,
+            zoomControl: true,
+            preferCanvas: false,
+        });
+
+        var tile_layer = L.tileLayer(
+            "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                attribution:
+                    '\u0026copy; \u003ca href="https://www.openstreetmap.org/copyright"\u003eOpenStreetMap\u003c/a\u003e contributors',
+                detectRetina: false,
+                maxNativeZoom: 19,
+                maxZoom: 19,
+                minZoom: 0,
+                noWrap: false,
+                opacity: 1,
+                subdomains: "abc",
+                tms: false,
+            }
+        );
+
+        tile_layer.addTo(map_inner);
+
+        // Function to update the heatmap
+        function updateHeatmap() {
+            // Filter the data based on button states
+            var filteredData = colleges.map((college) => {
+                if (stype === 0 || stype === 1) { // public
+                    document.getElementById("instate").disabled = false;
+                    document.getElementById("outofstate").disabled = false;
+                    if (college["school_type"] !== 1) {
+                    return null;
+                    }
+                } else if (stype === 2) { // private
+                    document.getElementById("instate").disabled = true;
+                    document.getElementById("outofstate").disabled = true;
+                    if (college["school_type"] === 1){  
+                        return null;
+                    } 
+                } else if (stype === 3){
+                    document.getElementById("instate").disabled = false;
+                    document.getElementById("outofstate").disabled = false;  
+                }
+
+                if (degree === 1 || degree === 0) { // 4 yrs
+                    if (college["degree_length"] <= 2) return null;
+                } else if (degree === 2) { // 2 yrs
+                    if (college["degree_length"] !== 2) return null;
+                }
+
+                // Check if all three values are not null
+                if (
+                    college["latitude"] !== null &&
+                    college["longitude"] !== null
+                ) {
+                    var tuitionValue = is_in_state
+                        ? college["tuition_in_state"]
+                        : college["tuition_out_of_state"];
+
+                    // Check if tuitionValue is not null
+                    if (tuitionValue !== null) {
+                        return [
+                            college["latitude"],
+                            college["longitude"],
+                            tuitionValue,
+                            college["school_name"],
+                        ];
+                    }
+                }
+
+                // If any of the values is null, skip this entry
+                return null;
+            });
+
+            // Remove entries with null values
+            filteredData = filteredData.filter((entry) => entry !== null);
+
+            // Remove the existing heatmap layer
+            if (heat_map) {
+                map_inner.removeLayer(heat_map);
+            }
+            if (dot_map) {
+                map_inner.removeLayer(dot_map);
+            }
+
+            // Create a new heatmap layer with the filtered data
+            heat_map = L.heatLayer(
+                filteredData.map((d) => {
+                    return [d[0], d[1], normalization(d[2])];
+                }),
+                {
+                    blur: 50,
+                    gradient: {
+                        0.0: "green",
+                        0.4: "green",
+                        0.65: "orange",
+                        1: "red",
+                    },
+                    maxZoom: 18,
+                    minOpacity: 0.5,
+                    radius: 50,
+                }
+            );
+
+            dot_map = L.layerGroup(
+                filteredData.map((entry) => {
+                    return L.circleMarker([entry[0], entry[1]], {
+                        radius: 2,
+                        fillColor: "white",
+                        color: "black",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 1,
+                    }).bindPopup(
+                        `<b>${entry[3]}</b><br>
+                        Tuituion: $${entry[2]}<br>
+                        `
+                    );
+                })
+            );
+
+            // Add the new heatmap layer to the map
+            map_inner.addLayer(dot_map);
+            heat_map.addTo(map_inner);
+        }
+
+        // Call updateHeatmap to show the heatmap initially
+        updateHeatmap();
+
+        function normalization(x) {
+            return Math.exp(100 * (x / 10000)) - 1;
+        }
+    </script>
+</html>
