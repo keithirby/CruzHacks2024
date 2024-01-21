@@ -27,7 +27,6 @@ Our goal was to show the disparity between a 2-year education and a 4-year educa
     * In-state 
     * Out-of-state
 
-In addition to this, we also added a list feature that can sort the schools by their costs in a descending and ascending order.
 
 ## Disclaimer
 
