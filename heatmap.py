@@ -1,6 +1,7 @@
 import folium
 from folium.plugins import HeatMap
 from branca.colormap import linear
+import json
 # import getting_data
 from flask import Flask, render_template
 from pymongo import MongoClient
@@ -33,14 +34,10 @@ items = [College(id=college['id'],
                  )
          for college in colleges]
 
-# # Example data from the API responsea
-# latitude = getting_data.latitude  # Example latitudes
-# longitude = getting_data.longitude  # Example longitudes
-# # Replace with the actual tuition data
-# tuition_in_state = getting_data.tuition_in_state
 
 # Create a folium map centered around the US
 us_map = folium.Map(location=[37.7749, -95.4194], zoom_start=4)
+
 
 # Create HeatMap data using the latitude, longitude, and tuition data
 # heat_data = list(zip(items.latitude, items.longitude,

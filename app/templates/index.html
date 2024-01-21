@@ -1,24 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flask MongoDB Example</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <style>
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"
+        />
+
+        <meta
+            name="viewport"
+            content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <style>
+            #map_inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+            .leaflet-container {
+                font-size: 1rem;
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
     </head>
     <body>
-        <h1>Data from MongoDB</h1>
-        <ul>
-            {% for college in colleges %}
-            <li>
-                Id: {{ college['id'] }}<br />
-                School: {{ college['school_name'] }}<br />
-                Tuition (In-State): {{ college['tuition_in_state'] }}<br />
-                Tuition (Out-of-State): {{ college['tuition_out_of_state'] }}<br />
-                Longitude, Latitude: {{ college['longitude']}}, {{
-                college['latitude'] }}<br />
-                <br />
-            </li>
-            {% endfor %}
-        </ul>
+        <div class="folium-map" id="map_inner"></div>
+        <script>
+            console.log(typeof colleges);
+            colleges = `{{ colleges|tojson|safe }}`;
+
+            var colleges = JSON.parse(colleges);
+            console.log(colleges[0]);
+
+            var is_public = true;
+            var is_4yrs = true;
+            var is_in_state = true;
+
+            var map_inner = L.map("map_inner", {
+                center: [37.7749, -95.4194],
+                crs: L.CRS.EPSG3857,
+                zoom: 4,
+                zoomControl: true,
+                preferCanvas: false,
+            });
+
+            var tile_layer = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+                    attribution:
+                        '\u0026copy; \u003ca href="https://www.openstreetmap.org/copyright"\u003eOpenStreetMap\u003c/a\u003e contributors',
+                    detectRetina: false,
+                    maxNativeZoom: 19,
+                    maxZoom: 19,
+                    minZoom: 0,
+                    noWrap: false,
+                    opacity: 1,
+                    subdomains: "abc",
+                    tms: false,
+                }
+            );
+
+            tile_layer.addTo(map_inner);
+
+            var data = colleges.map((college) => {
+                if (is_public && college["school_type"] !== 1) {
+                    return null;
+                }
+                if (is_4yrs && college["degree_length"] <= 2) {
+                    return null;
+                }
+
+                // Check if all three values are not null
+                if (
+                    college["latitude"] !== null &&
+                    college["longitude"] !== null
+                ) {
+                    var tuitionValue = is_in_state
+                        ? college["tuition_in_state"]
+                        : college["tuition_out_of_state"];
+
+                    // Check if tuitionValue is not null
+                    if (tuitionValue !== null) {
+                        return [
+                            college["latitude"],
+                            college["longitude"],
+                            tuitionValue,
+                        ];
+                    }
+                }
+
+                // If any of the values is null, skip this entry
+                return null;
+            });
+
+            // Remove entries with null values
+            data = data.filter((entry) => entry !== null);
+
+            var heat_map = L.heatLayer(data, {
+                blur: 50,
+                gradient: { 0.4: "yellow", 0.65: "orange", 1: "red" },
+                maxZoom: 18,
+                minOpacity: 0.5,
+                radius: 50,
+            });
+
+            heat_map.addTo(map_inner);
+        </script>
     </body>
 </html>
