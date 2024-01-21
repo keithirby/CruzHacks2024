@@ -1,17 +1,7 @@
 # CruzHacks2024 **tuitionshock.us**
 
 # Group Members
-<<<<<<< HEAD
 
--   Airi Kokuryo
--   Dallas Meyer
--   Eunice Hong
--   Keith Irby
-
-# Summary of **[tuitionshock.us](http://tuitionshock.us)**
-
-Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States.
-=======
 * [Airi Kokuryo](https://github.com/poe125)
 * [Dallas Meyer](https://github.com/dallasmeyer)
 * [Eunice Hong](https://github.com/eunbeen-hong)
@@ -21,7 +11,7 @@ Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cos
 # Summary of **[tuitionshock.us](http://tuitionshock.us)**
 
 Our hack, **[tuitionshock.us](http://tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States. 
->>>>>>> 2989358afb61d9f748baf733fe998ca0850e6ec7
+
 
 Our goal was to show the disparity between a 2-year education and a 4-year education while also highlighting the privilege of access to higher education in more expensive cities and states. We added the following filtering options to our heatmap to help highlight cost differences:
 
