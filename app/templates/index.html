@@ -69,53 +69,102 @@
                 left: 0%;
                 top: 0%;
             }
+            .folium-map {
+                flex: 1;
+                margin-left: 160px; /* Adjust based on the sidebar width */
+                height: 100vh; /* Take full height of the viewport */
+            }
             .leaflet-container {
                 font-size: 1rem;
             }
         </style>
+        <!-- include css file -->
+        <link rel="stylesheet" href="../static/css/sidebar.css" />
 
         <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
     </head>
     <body>
         <div class="folium-map" id="map_inner"></div>
-        <script>
-            console.log(typeof colleges);
-            colleges = `{{ colleges|tojson|safe }}`;
 
-            var colleges = JSON.parse(colleges);
-            console.log(colleges[0]);
+        <div class="sidenav">
+            <button id="publicBtn" class="active">Public</button>
+            <button id="fourYearsBtn" class="active">4 Years</button>
+            <button id="inStateBtn" class="active">In State</button>
+        </div>
+    </body>
 
-            var is_public = true;
-            var is_4yrs = true;
-            var is_in_state = true;
+    <script>
+        // Initial state of variables
+        var is_public = true;
+        var is_4yrs = true;
+        var is_in_state = true;
+        var heat_map;
 
-            var map_inner = L.map("map_inner", {
-                center: [37.7749, -95.4194],
-                crs: L.CRS.EPSG3857,
-                zoom: 4,
-                zoomControl: true,
-                preferCanvas: false,
+        // JavaScript to handle toggle functionality
+        document.addEventListener("DOMContentLoaded", function () {
+            var publicBtn = document.getElementById("publicBtn");
+            var fourYearsBtn = document.getElementById("fourYearsBtn");
+            var inStateBtn = document.getElementById("inStateBtn");
+
+            // Add click event listeners to the buttons
+            publicBtn.addEventListener("click", function () {
+                is_public = !is_public;
+                toggleButton(publicBtn, is_public);
             });
 
-            var tile_layer = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {
-                    attribution:
-                        '\u0026copy; \u003ca href="https://www.openstreetmap.org/copyright"\u003eOpenStreetMap\u003c/a\u003e contributors',
-                    detectRetina: false,
-                    maxNativeZoom: 19,
-                    maxZoom: 19,
-                    minZoom: 0,
-                    noWrap: false,
-                    opacity: 1,
-                    subdomains: "abc",
-                    tms: false,
-                }
-            );
+            fourYearsBtn.addEventListener("click", function () {
+                is_4yrs = !is_4yrs;
+                toggleButton(fourYearsBtn, is_4yrs);
+            });
 
-            tile_layer.addTo(map_inner);
+            inStateBtn.addEventListener("click", function () {
+                is_in_state = !is_in_state;
+                toggleButton(inStateBtn, is_in_state);
+            });
 
-            var data = colleges.map((college) => {
+            function toggleButton(button, state) {
+                button.classList.toggle("active", state);
+                updateHeatmap();
+            }
+        });
+
+        // Generate the map
+        console.log(typeof colleges);
+        colleges = `{{ colleges|tojson|safe }}`;
+
+        var colleges = JSON.parse(colleges);
+        console.log(colleges[0]);
+
+        var map_inner = L.map("map_inner", {
+            center: [37.7749, -95.4194],
+            crs: L.CRS.EPSG3857,
+            zoom: 4,
+            zoomControl: true,
+            preferCanvas: false,
+        });
+
+        var tile_layer = L.tileLayer(
+            "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                attribution:
+                    '\u0026copy; \u003ca href="https://www.openstreetmap.org/copyright"\u003eOpenStreetMap\u003c/a\u003e contributors',
+                detectRetina: false,
+                maxNativeZoom: 19,
+                maxZoom: 19,
+                minZoom: 0,
+                noWrap: false,
+                opacity: 1,
+                subdomains: "abc",
+                tms: false,
+            }
+        );
+
+        tile_layer.addTo(map_inner);
+
+        // Function to update the heatmap
+        function updateHeatmap() {
+            // Filter the data based on button states
+            var filteredData = colleges.map((college) => {
                 if (is_public && college["school_type"] !== 1) {
                     return null;
                 }
@@ -147,9 +196,15 @@
             });
 
             // Remove entries with null values
-            data = data.filter((entry) => entry !== null);
+            filteredData = filteredData.filter((entry) => entry !== null);
 
-            var heat_map = L.heatLayer(data, {
+            // Remove the existing heatmap layer
+            if (heat_map) {
+                map_inner.removeLayer(heat_map);
+            }
+
+            // Create a new heatmap layer with the filtered data
+            heat_map = L.heatLayer(filteredData, {
                 blur: 50,
                 gradient: { 0.4: "yellow", 0.65: "orange", 1: "red" },
                 maxZoom: 18,
@@ -157,7 +212,8 @@
                 radius: 50,
             });
 
+            // Add the new heatmap layer to the map
             heat_map.addTo(map_inner);
-        </script>
-    </body>
+        }
+    </script>
 </html>
