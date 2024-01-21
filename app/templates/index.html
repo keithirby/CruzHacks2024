@@ -25,6 +25,28 @@
                 right: 0;
                 left: 0;
             }
+              .legend {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 5vw;
+                height: 40vh;
+                left: 50%;
+                padding: 5px;
+                background: linear-gradient(to top, green, yellow, orange, red, purple);
+                text-align: center;
+              }
+
+              .legend-item {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
         </style>
 
         <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -140,46 +162,60 @@
     </head>
     <body>
         <div class="folium-map" id="map_inner"></div>
-
-        <div class="folium-map" id="map_inner"></div>
         <div id="map-container">
             <div class="folium-map" id="map_inner"></div>
-  <div id="sidebar">
-  <h2>Degree Length</h2>
-  <form id="fstRadBtn">
-      <label>
-          <input type="radio" name="degree" id="4yrs"> 4-years
-      </label>
-      <label>
-          <input type="radio" name="degree" id="2yrs"> 2-years
-      </label>
-      <label>
-          <input type="radio" name="degree" id="bothyrs"> both
-      </label>
-  </form>
-  <h3>School Type</h3>
-  <form id="sndRadBtn">
-      <label>
-          <input type="radio" name="type" id="public"> Public
-      </label>
-      <label>
-          <input type="radio" name="type" id="private"> Private
-      </label>
-      <label>
-          <input type="radio" name="type" id="bothtypes"> both
-      </label>
-  </form>
-  <h4>Tuition Type</h4>
-  <form id="thdRadBtn">
-      <label>
-          <input type="radio" name="tuition" id="instate"> in-state
-      </label>
-      <label>
-          <input type="radio" name="tuition" id="outofstate"> out of state
-      </label>
-  </form>
-</div>
-    </body>
+        <!-- <div class="folium-map" id="map_inner"></div> -->
+
+
+        <div id="sidebar">
+        <h4>Degree Length</h4>
+        <form>
+            <label>
+                <input type="radio" name="degree" id="4yrs" checked> 4-years
+            </label>
+            <label>
+                <input type="radio" name="degree" id="2yrs"> 2-years
+            </label>
+            <label>
+                <input type="radio" name="degree" id="bothyrs"> both
+            </label>
+        </form>
+        <h4>School Type</h4>
+        <form>
+            <label>
+                <input type="radio" name="type" id="public" checked> Public
+            </label>
+            <label>
+                <input type="radio" name="type" id="private"> Private
+            </label>
+            <label>
+                <input type="radio" name="type" id="bothtypes"> both
+            </label>
+        </form>
+        <h4>Tuition Type</h4>
+        <form>
+            <label>
+                <input type="radio" name="tuition" id="instate" checked> in-state
+            </label>
+            <label>
+                <input type="radio" name="tuition" id="outofstate"> out of state
+            </label>
+        </form>
+
+        <br />
+
+        <h4>Legend</h4>
+        <div class="legend">
+            <div class="legend-item">Max</div>
+            <div class="legend-item"></div>
+            <div class="legend-item"></div>
+            <div class="legend-item"></div>
+            <div class="legend-item">Min</div>
+        </div>
+      </div>
+
+
+</body>
 
     <script>
         var degree = 0; // if 0, none selected. 4yrs: 1, 2yrs: 2, both: 3
@@ -189,12 +225,12 @@
         var dot_map;
 
         document.addEventListener("DOMContentLoaded", function () {
-        
+
             // Function to update degree based on radio button selection
             function updateDegree() {
                 var degreeRadios = document.getElementsByName("degree");
                 degree = 0; // Reset to 0
-        
+
                 for (var i = 0; i < degreeRadios.length; i++) {
                     if (degreeRadios[i].checked) {
                         degree = i + 1; // Update based on 1-based index
@@ -204,12 +240,12 @@
 
                 updateHeatmap();
             }
-        
+
             // Function to update stype based on radio button selection
             function updateStype() {
                 var stypeRadios = document.getElementsByName("type");
                 stype = 0; // Reset to 0
-        
+
                 for (var i = 0; i < stypeRadios.length; i++) {
                     if (stypeRadios[i].checked) {
                         stype = i + 1; // Update based on 1-based index
@@ -219,12 +255,12 @@
 
                 updateHeatmap();
             }
-        
+
             // Function to update is_in_state based on radio button selection
             function updateIsInState() {
                 var isInStateRadio = document.getElementById("instate");
                 var isOutOfStateRadio = document.getElementById("outofstate");
-        
+
                 if (isInStateRadio.checked) {
                     is_in_state = true;
                 } else if (isOutOfStateRadio.checked) {
@@ -232,30 +268,30 @@
                 }
                 updateHeatmap();
             }
-        
+
             // Add event listeners to radio buttons
             var degreeRadios = document.getElementsByName("degree");
             var stypeRadios = document.getElementsByName("type");
             var isInStateRadio = document.getElementById("instate");
             var isOutOfStateRadio = document.getElementById("outofstate");
-        
+
             degreeRadios.forEach(function (radio) {
                 radio.addEventListener("change", updateDegree);
             });
-        
+
             stypeRadios.forEach(function (radio) {
                 radio.addEventListener("change", updateStype);
             });
-        
+
             isInStateRadio.addEventListener("change", updateIsInState);
             isOutOfStateRadio.addEventListener("change", updateIsInState);
-        
+
             function toggleButton(button, state) {
                 button.classList.toggle("active", state);
                 updateHeatmap();
         }
     });
-   
+
         // Generate the map
         colleges = `{{ colleges|tojson|safe }}`;
 
@@ -302,12 +338,12 @@
                 } else if (stype === 2) { // private
                     document.getElementById("instate").disabled = true;
                     document.getElementById("outofstate").disabled = true;
-                    if (college["school_type"] === 1){  
+                    if (college["school_type"] === 1){
                         return null;
-                    } 
+                    }
                 } else if (stype === 3){
                     document.getElementById("instate").disabled = false;
-                    document.getElementById("outofstate").disabled = false;  
+                    document.getElementById("outofstate").disabled = false;
                 }
 
                 if (degree === 1 || degree === 0) { // 4 yrs
@@ -369,7 +405,7 @@
                 });
 
                 const color = getColorForSegment(i);
-                
+
                 window[`heat_map${i + 1}`] = L.heatLayer(
                     filteredDataForSegment.map((entry) => {
                         return [entry[0], entry[1]];
