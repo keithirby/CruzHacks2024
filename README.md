@@ -1,10 +1,10 @@
 # CruzHacks2024 **tuitionshock.us**
 
 # Group Members
-* Airi Kokuryo
-* Dallas Meyer
-* Eunice Hong
-* Keith Irby
+* [Airi Kokuryo](https://github.com/poe125)
+* [Dallas Meyer](https://github.com/dallasmeyer)
+* [Eunice Hong](https://github.com/eunbeen-hong)
+* [Keith Irby](https://github.com/keithirby)
  
 
 # Summary of **[tuitionshock.us](http://tuitionshock.us)**
