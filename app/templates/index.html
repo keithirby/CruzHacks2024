@@ -195,6 +195,9 @@
                 return null;
             });
 
+            // Call updateHeatmap to show the heatmap initially
+            updateHeatmap();
+
             // Remove entries with null values
             filteredData = filteredData.filter((entry) => entry !== null);
 
