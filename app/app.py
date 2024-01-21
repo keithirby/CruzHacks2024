@@ -38,7 +38,7 @@ def index():
                      degree_length=college['school.degrees_awarded.highest']
                      )
              for college in colleges]
-    return render_template('index.html', colleges=items)
+    return render_template('index.html', colleges=[i.to_dict() for i in items])
 
 
 if __name__ == "__main__":
