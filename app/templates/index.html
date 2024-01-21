@@ -190,7 +190,8 @@
                         return [
                             college["latitude"],
                             college["longitude"],
-                            normalization(tuitionValue),
+                            tuitionValue,
+                            college["school_name"],
                         ];
                     }
                 }
@@ -211,18 +212,23 @@
             }
 
             // Create a new heatmap layer with the filtered data
-            heat_map = L.heatLayer(filteredData, {
-                blur: 50,
-                gradient: {
-                    0.0: "green",
-                    0.4: "green",
-                    0.65: "orange",
-                    1: "red",
-                },
-                maxZoom: 18,
-                minOpacity: 0.5,
-                radius: 50,
-            });
+            heat_map = L.heatLayer(
+                filteredData.map((d) => {
+                    return [d[0], d[1], normalization(d[2])];
+                }),
+                {
+                    blur: 50,
+                    gradient: {
+                        0.0: "green",
+                        0.4: "green",
+                        0.65: "orange",
+                        1: "red",
+                    },
+                    maxZoom: 18,
+                    minOpacity: 0.5,
+                    radius: 50,
+                }
+            );
 
             dot_map = L.layerGroup(
                 filteredData.map((entry) => {
@@ -233,7 +239,11 @@
                         weight: 1,
                         opacity: 1,
                         fillOpacity: 1,
-                    });
+                    }).bindPopup(
+                        `<b>${entry[3]}</b><br>
+                        Tuituion: $${entry[2]}<br>
+                        `
+                    );
                 })
             );
 
