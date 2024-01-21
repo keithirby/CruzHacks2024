@@ -12,14 +12,11 @@ db = client['morphius']  # Replace with your MongoDB database name
 collection = db['colleges']  # Replace with your desired collection name
 
 # Read data from the file
-with open('output.txt', 'r') as file:
-    for line in file:
+with open('data/null_location.txt', 'r') as file:
+    colleges = json.load(file)
+    for college in colleges:
         try:
-            # Parse each line as JSON
-            data = json.loads(line)
-            # Insert data into MongoDB
-            collection.insert_many(data['results'])
+            # Insert collection into MongoDB
+            collection.insert_one(college)
         except json.JSONDecodeError as e:
             print(f"Error decoding JSON: {e}")
-
-print("Data imported successfully.")
