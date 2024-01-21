@@ -16,36 +16,12 @@
                 margin: 0;
                 padding: 0;
             }
-        </style>
-        <style>
             #map {
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 right: 0;
                 left: 0;
-            }
-            .legend {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-            margin-left: 30px;
-            width: 5vw;
-            height: 40vh;
-            left: 50%;
-            padding: 5px;
-            background: linear-gradient(to top, green, yellow, orange, red, purple);
-            text-align: center;
-            }
-
-            .legend-item {
-            flex: 1;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             }
         </style>
 
@@ -95,18 +71,7 @@
                 margin: 0;
                 overflow: hidden;
             }
-            #sidebar {
-                position: fixed;
-                top: 0;
-                left:0;
-                width: 240px;
-                height: 100vh;
-                background-color: #242424;
-                padding: 20px;
-                bottom: 0%;
-                box-sizing: border-box;
-                float: left; /* Float the sidebar to the left */
-            }
+            
             #map-container {
                 position: absolute;
                 top: 0;
@@ -114,22 +79,6 @@
                 width: 100%;
                 height: 100%;
                 display: flex;
-            }
-            input[type="radio"] {
-                margin-bottom: 10px;
-            }
-            label {
-                display: block;
-                margin-bottom: 8px;
-            }
-
-            h4{
-                color:#ffffff;
-                font-size: 18px;
-                border-bottom: 1px solid #ffffff;
-            }
-            #RadBtn{
-                color:#ffffff;   
             }
 
             .folium-map {
@@ -154,6 +103,8 @@
 
 
         <div id="sidebar">
+
+
         <h4>Degree Length</h4>
         <form id="RadBtn">
             <label>
@@ -184,19 +135,22 @@
                 <input type="radio" name="tuition" id="instate" checked> in-state
             </label>
             <label>
-                <input type="radio" name="tuition" id="outofstate"> out of state
+                <input type="radio" name="tuition" id="outofstate"> out-of-state
             </label>
         </form>
 
         <br />
 
         <h4>Legend for Tuition</h4>
-        <div class="legend">
-            <div class="legend-item">Max</div>
+        <h3 style="color: white; margin-left: 5px; margin-right: 5px; margin-top: -2px;">
+           Min: $<span id="minValue"></span> &ensp;&ensp;&ensp;Max: $<span id="maxValue"></span>
+        </h3>
+        <div class="legend" id="legendbar">
+            <div class="legend-item"><b>Max</b></div>
             <div class="legend-item"></div>
             <div class="legend-item"></div>
             <div class="legend-item"></div>
-            <div class="legend-item">Min</div>
+            <div class="legend-item"><b>Min</b></div>
         </div>
       </div>
 
@@ -283,6 +237,20 @@
         colleges = `{{ colleges|tojson|safe }}`;
 
         var colleges = JSON.parse(colleges);
+
+        var maxValue = Math.max.apply(
+            Math,
+            colleges.map(function (o) {
+                return o.tuition_out_of_state;
+            })
+        );
+        var minValue = Math.min.apply(
+            Math,
+            colleges.map(function (o) {
+                return o.tuition_in_state;
+            })
+        );
+
 
         var map_inner = L.map("map_inner", {
             center: [37.7749, -95.4194],
@@ -384,10 +352,12 @@
             // Create heatmap layers for each segment
             const colors = ["green", "yellow", "orange", "red", "purple", "black"];
             const segmentRanges = [0, 10000, 25000, 40000, 55000, 999999]; // Adjust these ranges based on your data
+        
+
 
             for (let i = 0; i < 5; i++) {
-                const minRange = segmentRanges[i];
-                const maxRange = segmentRanges[i + 1];
+                var minRange = segmentRanges[i];
+                var maxRange = segmentRanges[i + 1];
 
                 const filteredDataForSegment = filteredData.filter((entry) => {
                     const tuitionValue = entry[2];
@@ -413,6 +383,8 @@
                 map_inner.addLayer(window[`heat_map${i + 1}`]);
             }
 
+            document.getElementById("maxValue").textContent = maxValue;
+            document.getElementById("minValue").textContent = minValue;
 
             // Example function to define color based on segment
             function getColorForSegment(segment) {

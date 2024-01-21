@@ -1,39 +1,80 @@
-.sidenav {
-    height: 100%;
-    width: 160px;
+#sidebar {
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
+    width: 240px;
+    height: 100vh;
+    background-color: #242424;
+    padding: 20px;
+    bottom: 0%;
+    box-sizing: border-box;
+    float: left; /* Float the sidebar to the left */
 }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    border-bottom: 1px solid #878686;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    border-bottom: 1px solid hsl(0, 0%, 60%);
+}
+#RadBtn {
+    color: #ffffff;
+}
+
+input[type="radio"] {
+    /* margin-bottom: 10px; */
+    border: 1px solid #fff;
+    padding: 0.5em;
+    -webkit-appearance: none;
+}
+input[type="radio"]:checked {
+    background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==)
+        no-repeat center center;
+    background-size: 9px 9px;
+}
+input[type="radio"]:focus {
+    outline-color: transparent;
+}
+
+label {
     display: block;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+.legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 90px;
+    width: 20px;
+    height: 40vh;
+    left: 50%;
+    padding: 5px;
+    background: linear-gradient(to top, green, yellow, orange, red, purple);
+    text-align: center;
+}
+#legendbar {
+    justify-content: center;
+    align-items: center;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav button {
-    display: block;
+.legend-item {
+    flex: 1;
+    font-size: 20px;
     width: 100%;
-    padding: 8px;
-    text-align: left;
-    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.sidenav button.active {
-    background-color: #4caf50;
+    -webkit-text-stroke: 0.2px white;
 }
