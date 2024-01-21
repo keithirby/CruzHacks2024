@@ -9,7 +9,7 @@
 
 # Summary of **[tuitionshock.us](tuitionshock.us)**
 
-Our hack, **[tuitionshock.us](tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States. 
+Our hack, **[tuitionshock.us](www.tuitionshock.us)**, is a heatmap of the cost for community colleges and universities in the United States. 
 
 Our goal was to show the disparity between a 2-year education and a 4-year education while also highlighting the privilege of access to higher education in more expensive cities and states. We added the following filtering options to our heatmap to help highlight cost differences:
 
