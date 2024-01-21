@@ -69,6 +69,27 @@
                 left: 0%;
                 top: 0%;
             }
+            
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 160px;
+        height: 100vh;
+        background-color: #f5f5f5;
+        padding: 20px;
+        bottom: 0%;
+        box-sizing: border-box;
+        float: left; /* Float the sidebar to the left */
+    }
+    input[type="radio"] {
+        margin-bottom: 10px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
             .folium-map {
                 flex: 1;
                 margin-left: 160px; /* Adjust based on the sidebar width */
@@ -86,49 +107,120 @@
     <body>
         <div class="folium-map" id="map_inner"></div>
 
-        <div class="sidenav">
-            <button id="publicBtn" class="active">Public</button>
-            <button id="fourYearsBtn" class="active">4 Years</button>
-            <button id="inStateBtn" class="active">In State</button>
-        </div>
+        <div class="folium-map" id="map_inner"></div>
+  <div id="sidebar">
+  <h4>Degree Length</h4>
+  <form>
+      <label>
+          <input type="radio" name="degree" id="4yrs"> 4-years
+      </label>
+      <label>
+          <input type="radio" name="degree" id="2yrs"> 2-years
+      </label>
+      <label>
+          <input type="radio" name="degree" id="bothyrs"> both
+      </label>
+  </form>
+  <h4>School Type</h4>
+  <form>
+      <label>
+          <input type="radio" name="type" id="public"> Public
+      </label>
+      <label>
+          <input type="radio" name="type" id="private"> Private
+      </label>
+      <label>
+          <input type="radio" name="type" id="bothtypes"> both
+      </label>
+  </form>
+  <h4>Tuition Type</h4>
+  <form>
+      <label>
+          <input type="radio" name="tuition" id="instate"> in-state
+      </label>
+      <label>
+          <input type="radio" name="tuition" id="outofstate"> out of state
+      </label>
+  </form>
+</div>
+
     </body>
 
     <script>
-        // Initial state of variables
-        var is_public = true;
-        var is_4yrs = true;
-        var is_in_state = true;
+        var degree = 0; // if 0, none selected. 4yrs: 1, 2yrs: 2, both: 3
+        var stype = 0; // if 0, none selected. state: 1, private: 2, both: 3
+        var is_in_state = true; // in state or out of state
         var heat_map;
         var dot_map;
 
-        // JavaScript to handle toggle functionality
         document.addEventListener("DOMContentLoaded", function () {
-            var publicBtn = document.getElementById("publicBtn");
-            var fourYearsBtn = document.getElementById("fourYearsBtn");
-            var inStateBtn = document.getElementById("inStateBtn");
+        
+            // Function to update degree based on radio button selection
+            function updateDegree() {
+                var degreeRadios = document.getElementsByName("degree");
+                degree = 0; // Reset to 0
+        
+                for (var i = 0; i < degreeRadios.length; i++) {
+                    if (degreeRadios[i].checked) {
+                        degree = i + 1; // Update based on 1-based index
+                        break;
+                    }
+                }
 
-            // Add click event listeners to the buttons
-            publicBtn.addEventListener("click", function () {
-                is_public = !is_public;
-                toggleButton(publicBtn, is_public);
+                updateHeatmap();
+            }
+        
+            // Function to update stype based on radio button selection
+            function updateStype() {
+                var stypeRadios = document.getElementsByName("type");
+                stype = 0; // Reset to 0
+        
+                for (var i = 0; i < stypeRadios.length; i++) {
+                    if (stypeRadios[i].checked) {
+                        stype = i + 1; // Update based on 1-based index
+                        break;
+                    }
+                }
+
+                updateHeatmap();
+            }
+        
+            // Function to update is_in_state based on radio button selection
+            function updateIsInState() {
+                var isInStateRadio = document.getElementById("instate");
+                var isOutOfStateRadio = document.getElementById("outofstate");
+        
+                if (isInStateRadio.checked) {
+                    is_in_state = true;
+                } else if (isOutOfStateRadio.checked) {
+                    is_in_state = false;
+                }
+                updateHeatmap();
+            }
+        
+            // Add event listeners to radio buttons
+            var degreeRadios = document.getElementsByName("degree");
+            var stypeRadios = document.getElementsByName("type");
+            var isInStateRadio = document.getElementById("instate");
+            var isOutOfStateRadio = document.getElementById("outofstate");
+        
+            degreeRadios.forEach(function (radio) {
+                radio.addEventListener("change", updateDegree);
             });
-
-            fourYearsBtn.addEventListener("click", function () {
-                is_4yrs = !is_4yrs;
-                toggleButton(fourYearsBtn, is_4yrs);
+        
+            stypeRadios.forEach(function (radio) {
+                radio.addEventListener("change", updateStype);
             });
-
-            inStateBtn.addEventListener("click", function () {
-                is_in_state = !is_in_state;
-                toggleButton(inStateBtn, is_in_state);
-            });
-
+        
+            isInStateRadio.addEventListener("change", updateIsInState);
+            isOutOfStateRadio.addEventListener("change", updateIsInState);
+        
             function toggleButton(button, state) {
                 button.classList.toggle("active", state);
                 updateHeatmap();
-            }
-        });
-
+        }
+    });
+   
         // Generate the map
         colleges = `{{ colleges|tojson|safe }}`;
 
@@ -164,16 +256,27 @@
         function updateHeatmap() {
             // Filter the data based on button states
             var filteredData = colleges.map((college) => {
-                if (is_public) {
-                    if (college["school_type"] !== 1) return null;
-                } else {
-                    if (college["school_type"] === 1) return null;
+                if (stype === 0 || stype === 1) { // public
+                    document.getElementById("instate").disabled = false;
+                    document.getElementById("outofstate").disabled = false;
+                    if (college["school_type"] !== 1) {
+                    return null;
+                    }
+                } else if (stype === 2) { // private
+                    document.getElementById("instate").disabled = true;
+                    document.getElementById("outofstate").disabled = true;
+                    if (college["school_type"] === 1){  
+                        return null;
+                    } 
+                } else if (stype === 3){
+                    document.getElementById("instate").disabled = false;
+                    document.getElementById("outofstate").disabled = false;  
                 }
 
-                if (is_4yrs) {
+                if (degree === 1 || degree === 0) { // 4 yrs
                     if (college["degree_length"] <= 2) return null;
-                } else {
-                    if (college["degree_length"] > 2) return null;
+                } else if (degree === 2) { // 2 yrs
+                    if (college["degree_length"] !== 2) return null;
                 }
 
                 // Check if all three values are not null
