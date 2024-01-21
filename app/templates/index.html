@@ -164,11 +164,16 @@
         function updateHeatmap() {
             // Filter the data based on button states
             var filteredData = colleges.map((college) => {
-                if (is_public && college["school_type"] !== 1) {
-                    return null;
+                if (is_public) {
+                    if (college["school_type"] !== 1) return null;
+                } else {
+                    if (college["school_type"] === 1) return null;
                 }
-                if (is_4yrs && college["degree_length"] <= 2) {
-                    return null;
+
+                if (is_4yrs) {
+                    if (college["degree_length"] <= 2) return null;
+                } else {
+                    if (college["degree_length"] > 2) return null;
                 }
 
                 // Check if all three values are not null
@@ -185,7 +190,7 @@
                         return [
                             college["latitude"],
                             college["longitude"],
-                            tuitionValue,
+                            normalization(tuitionValue),
                         ];
                     }
                 }
@@ -239,5 +244,9 @@
 
         // Call updateHeatmap to show the heatmap initially
         updateHeatmap();
+
+        function normalization(x) {
+            return Math.exp(100 * (x / 10000)) - 1;
+        }
     </script>
 </html>
