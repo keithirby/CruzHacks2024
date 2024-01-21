@@ -43,3 +43,12 @@ The data collected was pulled from the *U.S Department of Education College Scor
 [Open Data Maker HTTP API](https://github.com/RTICWDT/open-data-maker/blob/master/API.md)
 
 [College Scorecard API Guide](https://collegescorecard.ed.gov/data/documentation/)
+
+# Tech Stack
+
+Server: Flask 🚀
+Database: MongoDB Atlas 📊
+Frontend: HTML + CSS + JavaScript 🌐
+
+
+
