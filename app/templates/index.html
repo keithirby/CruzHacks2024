@@ -99,6 +99,7 @@
         var is_4yrs = true;
         var is_in_state = true;
         var heat_map;
+        var dot_map;
 
         // JavaScript to handle toggle functionality
         document.addEventListener("DOMContentLoaded", function () {
@@ -129,11 +130,9 @@
         });
 
         // Generate the map
-        console.log(typeof colleges);
         colleges = `{{ colleges|tojson|safe }}`;
 
         var colleges = JSON.parse(colleges);
-        console.log(colleges[0]);
 
         var map_inner = L.map("map_inner", {
             center: [37.7749, -95.4194],
@@ -195,9 +194,6 @@
                 return null;
             });
 
-            // Call updateHeatmap to show the heatmap initially
-            updateHeatmap();
-
             // Remove entries with null values
             filteredData = filteredData.filter((entry) => entry !== null);
 
@@ -205,18 +201,43 @@
             if (heat_map) {
                 map_inner.removeLayer(heat_map);
             }
+            if (dot_map) {
+                map_inner.removeLayer(dot_map);
+            }
 
             // Create a new heatmap layer with the filtered data
             heat_map = L.heatLayer(filteredData, {
                 blur: 50,
-                gradient: { 0.4: "yellow", 0.65: "orange", 1: "red" },
+                gradient: {
+                    0.0: "green",
+                    0.4: "green",
+                    0.65: "orange",
+                    1: "red",
+                },
                 maxZoom: 18,
                 minOpacity: 0.5,
                 radius: 50,
             });
 
+            dot_map = L.layerGroup(
+                filteredData.map((entry) => {
+                    return L.circleMarker([entry[0], entry[1]], {
+                        radius: 2,
+                        fillColor: "white",
+                        color: "black",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 1,
+                    });
+                })
+            );
+
             // Add the new heatmap layer to the map
+            map_inner.addLayer(dot_map);
             heat_map.addTo(map_inner);
         }
+
+        // Call updateHeatmap to show the heatmap initially
+        updateHeatmap();
     </script>
 </html>
