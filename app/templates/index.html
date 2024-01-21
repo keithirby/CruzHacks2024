@@ -252,6 +252,8 @@
 
         tile_layer.addTo(map_inner);
 
+        var heat_maps = [];
+
         // Function to update the heatmap
         function updateHeatmap() {
             // Filter the data based on button states
@@ -306,32 +308,55 @@
             // Remove entries with null values
             filteredData = filteredData.filter((entry) => entry !== null);
 
-            // Remove the existing heatmap layer
-            if (heat_map) {
-                map_inner.removeLayer(heat_map);
+            // Remove the existing heatmap layers
+            for (let i = 1; i <= 5; i++) {
+                const heatMapVariable = window[`heat_map${i}`];
+                if (heatMapVariable) {
+                    map_inner.removeLayer(heatMapVariable);
+                }
             }
+
             if (dot_map) {
                 map_inner.removeLayer(dot_map);
             }
 
-            // Create a new heatmap layer with the filtered data
-            heat_map = L.heatLayer(
-                filteredData.map((d) => {
-                    return [d[0], d[1], normalization(d[2])];
-                }),
-                {
-                    blur: 50,
-                    gradient: {
-                        0.0: "green",
-                        0.4: "green",
-                        0.65: "orange",
-                        1: "red",
-                    },
-                    maxZoom: 18,
-                    minOpacity: 0.5,
-                    radius: 50,
-                }
-            );
+            // Create heatmap layers for each segment
+            const colors = ["green", "yellow", "orange", "red", "purple", "black"];
+            const segmentRanges = [0, 10000, 25000, 40000, 55000, 999999]; // Adjust these ranges based on your data
+
+            for (let i = 0; i < 5; i++) {
+                const minRange = segmentRanges[i];
+                const maxRange = segmentRanges[i + 1];
+
+                const filteredDataForSegment = filteredData.filter((entry) => {
+                    const tuitionValue = entry[2];
+                    return tuitionValue >= minRange && tuitionValue < maxRange;
+                });
+
+                const color = getColorForSegment(i);
+                
+                window[`heat_map${i + 1}`] = L.heatLayer(
+                    filteredDataForSegment.map((entry) => {
+                        return [entry[0], entry[1]];
+                    }), {
+                        gradient: {
+                            0.0: color,
+                            0.5: color,
+                            1.0: color,
+                        },
+                        radius: 25, // Adjust the radius based on your preference
+                        blur: 15, // Adjust the blur for the fading effect
+                    }
+                );
+
+                map_inner.addLayer(window[`heat_map${i + 1}`]);
+            }
+
+
+            // Example function to define color based on segment
+            function getColorForSegment(segment) {
+                return colors[segment];
+            }
 
             dot_map = L.layerGroup(
                 filteredData.map((entry) => {
