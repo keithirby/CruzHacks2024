@@ -25,28 +25,28 @@
                 right: 0;
                 left: 0;
             }
-              .legend {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-top: 10px;
-                margin-left: 30px;
-                width: 5vw;
-                height: 40vh;
-                left: 50%;
-                padding: 5px;
-                background: linear-gradient(to top, green, yellow, orange, red, purple);
-                text-align: center;
-              }
+            .legend {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 5vw;
+            height: 40vh;
+            left: 50%;
+            padding: 5px;
+            background: linear-gradient(to top, green, yellow, orange, red, purple);
+            text-align: center;
+            }
 
-              .legend-item {
-                flex: 1;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
+            .legend-item {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
         </style>
 
         <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -208,7 +208,8 @@
         var stype = 0; // if 0, none selected. state: 1, private: 2, both: 3
         var is_in_state = true; // in state or out of state
         var heat_map;
-        var dot_map;
+        var click_dot_map;
+        var visual_dot_map;
 
         document.addEventListener("DOMContentLoaded", function () {
 
@@ -373,8 +374,11 @@
                 }
             }
 
-            if (dot_map) {
-                map_inner.removeLayer(dot_map);
+            if (click_dot_map) {
+                map_inner.removeLayer(click_dot_map);
+            }           
+            if (visual_dot_map) {
+                map_inner.removeLayer(visual_dot_map);
             }
 
             // Create heatmap layers for each segment
@@ -415,25 +419,51 @@
                 return colors[segment];
             }
 
-            dot_map = L.layerGroup(
+            click_dot_map = L.layerGroup(
                 filteredData.map((entry) => {
-                    return L.circleMarker([entry[0], entry[1]], {
-                        radius: 2,
+                    // Define a larger radius for the clickable area
+                    const clickableRadius = 10;
+
+                    // Create the circle marker with a small visual radius
+                    const circleMarker = L.circleMarker([entry[0], entry[1]], {
+                        radius: 2, // Small visual radius
                         fillColor: "white",
                         color: "black",
                         weight: 1,
-                        opacity: 1,
-                        fillOpacity: 1,
+                        opacity: 0,
+                        fillOpacity: 0,
                     }).bindPopup(
                         `<b>${entry[3]}</b><br>
                         Tuituion: $${entry[2]}<br>
                         `
                     );
+
+                // Set the larger clickable area radius
+                circleMarker.setRadius(clickableRadius);
+
+                return circleMarker;
+                })
+            );
+
+            visual_dot_map = L.layerGroup(
+                filteredData.map((entry) => {
+
+                    // Create the circle marker with a small visual radius
+                    const circleMarker = L.circleMarker([entry[0], entry[1]], {
+                        radius: 2, // Small visual radius
+                        fillColor: "white",
+                        color: "black",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 1,
+                    })
+                return circleMarker;
                 })
             );
 
             // Add the new heatmap layer to the map
-            map_inner.addLayer(dot_map);
+            map_inner.addLayer(click_dot_map);
+            map_inner.addLayer(visual_dot_map);
             heat_map.addTo(map_inner);
         }
 
