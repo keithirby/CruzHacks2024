@@ -46,8 +46,8 @@ The data collected was pulled from the *U.S Department of Education College Scor
 
 # Tech Stack
 
-Server: Flask 🚀
-Database: MongoDB Atlas 📊
+Server: Flask 🚀\
+Database: MongoDB Atlas 📊\
 Frontend: HTML + CSS + JavaScript 🌐
 
 
